@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire - 40–65 ans</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Questionnaire - 40–65 ans</h1>
+    <p>Transports non polluants à Nice</p>
+</header>
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="questionnaire.html">Questionnaire</a></li>
+        <li><a href="solutions.html">Solutions proposées</a></li>
+        <li><a href="methodologie.html">Méthodologie</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form class="questionnaire">
+
+        <fieldset>
+            <legend>Profil et satisfaction générale</legend>
+
+            <p><strong>Q1. Vous êtes :</strong></p>
+            <label><input type="radio" name="profil" value="habitant"> Habitant(e) de Nice</label>
+            <label><input type="radio" name="profil" value="touriste_fr"> Touriste français</label>
+            <label><input type="radio" name="profil" value="touriste_etr"> Touriste étranger</label>
+
+            <p><strong>Q2. Êtes-vous globalement satisfait(e) des transports à Nice ?</strong></p>
+            <label><input type="radio" name="D1" value="oui"> Oui</label>
+            <label><input type="radio" name="D1" value="non"> Non</label>
+            <label><input type="radio" name="D1" value="moyen"> Moyennement</label>
+
+            <p><strong>Q3. Vous utilisez principalement :</strong></p>
+            <label><input type="radio" name="D2" value="voiture"> Voiture</label>
+            <label><input type="radio" name="D2" value="tram"> Tram</label>
+            <label><input type="radio" name="D2" value="bus"> Bus</label>
+            <label><input type="radio" name="D2" value="velo"> Vélo / trottinette</label>
+            <label><input type="radio" name="D2" value="marche"> Marche</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Priorités et freins</legend>
+
+            <p><strong>Q4. Votre priorité dans un transport est :</strong></p>
+            <label><input type="radio" name="D3" value="confort"> Confort</label>
+            <label><input type="radio" name="D3" value="fiabilite"> Fiabilité</label>
+            <label><input type="radio" name="D3" value="temps"> Temps de trajet</label>
+            <label><input type="radio" name="D3" value="cout"> Coût</label>
+
+            <p><strong>Q5. Utilisez-vous au moins un mode de transport non polluant (marche, vélo, tram, bus électrique) chaque semaine ?</strong></p>
+            <label><input type="radio" name="D4" value="oui"> Oui</label>
+            <label><input type="radio" name="D4" value="non"> Non</label>
+
+            <p><strong>Q6. Si non, votre principal frein est :</strong></p>
+            <label><input type="radio" name="D5" value="habitude"> Habitude de la voiture</label>
+            <label><input type="radio" name="D5" value="organisation"> Organisation (famille, travail)</label>
+            <label><input type="radio" name="D5" value="distance"> Distance</label>
+            <label><input type="radio" name="D5" value="confort"> Manque de confort</label>
+            <label><input type="radio" name="D5" value="securite"> Sécurité</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Infrastructures et sécurité</legend>
+
+            <p><strong>Q7. À votre avis, les pistes cyclables sont :</strong></p>
+            <label><input type="radio" name="D6" value="suffisantes"> Suffisantes et bien aménagées</label>
+            <label><input type="radio" name="D6" value="presentes"> Présentes mais insuffisantes</label>
+            <label><input type="radio" name="D6" value="peu"> Peu présentes</label>
+            <label><input type="radio" name="D6" value="absentes"> Inexistantes</label>
+
+            <p><strong>Q8. Seriez-vous prêt(e) à utiliser un vélo électrique pour certains trajets ?</strong></p>
+            <label><input type="radio" name="D7" value="oui"> Oui</label>
+            <label><input type="radio" name="D7" value="non"> Non</label>
+            <label><input type="radio" name="D7" value="peut_etre"> Peut-être</label>
+
+            <p><strong>Q9. La sécurité des piétons et cyclistes à Nice vous semble :</strong></p>
+            <label><input type="radio" name="D8" value="bonne"> Bonne</label>
+            <label><input type="radio" name="D8" value="moyenne"> Moyenne</label>
+            <label><input type="radio" name="D8" value="mauvaise"> Mauvaise</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Rôle des transports non polluants</legend>
+
+            <p><strong>Q10. Pensez-vous que le tramway est un bon outil pour réduire la pollution à Nice ?</strong></p>
+            <label><input type="radio" name="D9" value="oui"> Oui</label>
+            <label><input type="radio" name="D9" value="non"> Non</label>
+            <label><input type="radio" name="D9" value="sans_avis"> Sans avis</label>
+
+            <p><strong>Q11. Souhaiteriez-vous plus de bus électriques (moins bruyants, moins polluants) ?</strong></p>
+            <label><input type="radio" name="D10" value="oui"> Oui</label>
+            <label><input type="radio" name="D10" value="non"> Non</label>
+            <label><input type="radio" name="D10" value="sans_avis"> Sans avis</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mesures possibles</legend>
+
+            <p><strong>Q12. Pour réduire la circulation automobile, seriez-vous favorable à :</strong></p>
+            <label><input type="checkbox" name="D11_zp" value="zones_pietonnes"> Plus de zones piétonnes</label>
+            <label><input type="checkbox" name="D11_pistes" value="pistes"> Plus de pistes cyclables</label>
+            <label><input type="checkbox" name="D11_pr" value="parkings_relais"> Des parkings relais en périphérie</label>
+            <label><input type="checkbox" name="D11_rien" value="rien"> Rien de tout cela</label>
+
+            <p><strong>Q13. Seriez-vous prêt(e) à limiter l’usage de votre voiture si les transports non polluants étaient plus attractifs ?</strong></p>
+            <label><input type="radio" name="D12" value="oui"> Oui</label>
+            <label><input type="radio" name="D12" value="non"> Non</label>
+            <label><input type="radio" name="D12" value="peut_etre"> Peut-être</label>
+
+            <p><strong>Q14. L’investissement prioritaire selon vous devrait être :</strong></p>
+            <label><input type="radio" name="D13" value="frequence"> Améliorer les fréquences de tram/bus</label>
+            <label><input type="radio" name="D13" value="bus_elec"> Développer les bus électriques</label>
+            <label><input type="radio" name="D13" value="pistes"> Créer plus de pistes cyclables sécurisées</label>
+            <label><input type="radio" name="D13" value="regulation"> Réguler davantage la voiture en centre-ville</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Perception globale</legend>
+
+            <p><strong>Q15. Trouvez-vous que Nice communique suffisamment sur les transports non polluants ?</strong></p>
+            <label><input type="radio" name="D14" value="oui"> Oui</label>
+            <label><input type="radio" name="D14" value="non"> Non</label>
+            <label><input type="radio" name="D14" value="nspp"> Je ne sais pas</label>
+
+            <p><strong>Q16. Recommanderiez-vous les transports de Nice à un ami qui souhaite se déplacer de façon écologique ?</strong></p>
+            <label><input type="radio" name="D15" value="oui"> Oui</label>
+            <label><input type="radio" name="D15" value="non"> Non</label>
+            <label><input type="radio" name="D15" value="peut_etre"> Peut-être</label>
+        </fieldset>
+
+        <p class="info-note">
+            Questionnaire élaboré dans le cadre d’un projet pédagogique. Les réponses ne sont pas enregistrées.
+        </p>
+
+        <p><input type="submit" value="(Envoi fictif)"></p>
+    </form>
+</main>
+
+<footer>
+    <p>Projet S106 - Questionnaire 40–65 ans</p>
+</footer>
+
+</body>
+</html>

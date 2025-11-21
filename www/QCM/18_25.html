@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire - 18–25 ans</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Questionnaire - 18–25 ans</h1>
+    <p>Transports non polluants à Nice</p>
+</header>
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="questionnaire.html">Questionnaire</a></li>
+        <li><a href="solutions.html">Solutions proposées</a></li>
+        <li><a href="methodologie.html">Méthodologie</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form class="questionnaire">
+
+        <fieldset>
+            <legend>Profil</legend>
+
+            <p><strong>Q1. Vous êtes :</strong></p>
+            <label><input type="radio" name="profil" value="habitant"> Habitant(e) de Nice</label>
+            <label><input type="radio" name="profil" value="touriste_fr"> Touriste français</label>
+            <label><input type="radio" name="profil" value="touriste_etr"> Touriste étranger</label>
+
+            <p><strong>Q2. Votre situation principale :</strong></p>
+            <label><input type="radio" name="B1" value="etudiant"> Étudiant(e)</label>
+            <label><input type="radio" name="B1" value="salarie"> Salarié(e)</label>
+            <label><input type="radio" name="B1" value="alternant"> Alternant(e)</label>
+            <label><input type="radio" name="B1" value="autre"> Autre</label>
+
+            <p><strong>Q3. À quelle fréquence utilisez-vous les transports à Nice ?</strong></p>
+            <label><input type="radio" name="freq" value="quotidien"> Tous les jours</label>
+            <label><input type="radio" name="freq" value="hebdo"> Plusieurs fois par semaine</label>
+            <label><input type="radio" name="freq" value="occasionnel"> Occasionnellement</label>
+            <label><input type="radio" name="freq" value="rare"> Très rarement</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Habitudes de transport</legend>
+
+            <p><strong>B2. Votre déplacement principal concerne :</strong></p>
+            <label><input type="radio" name="B2" value="etudes"> Les études</label>
+            <label><input type="radio" name="B2" value="travail"> Le travail</label>
+            <label><input type="radio" name="B2" value="loisirs"> Les loisirs / sorties</label>
+
+            <p><strong>B3. Vous utilisez le plus souvent :</strong></p>
+            <label><input type="radio" name="B3" value="tram"> Tramway</label>
+            <label><input type="radio" name="B3" value="bus"> Bus</label>
+            <label><input type="radio" name="B3" value="velo"> Vélo / vélo électrique</label>
+            <label><input type="radio" name="B3" value="trottinette"> Trottinette</label>
+            <label><input type="radio" name="B3" value="voiture"> Voiture</label>
+            <label><input type="radio" name="B3" value="marche"> Marche</label>
+
+            <p><strong>B4. Le prix des transports influence-t-il fortement votre choix ?</strong></p>
+            <label><input type="radio" name="B4" value="oui"> Oui</label>
+            <label><input type="radio" name="B4" value="non"> Non</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Libre-service et critères</legend>
+
+            <p><strong>B5. Utilisez-vous les vélos ou trottinettes en libre-service à Nice ?</strong></p>
+            <label><input type="radio" name="B5" value="souvent"> Souvent</label>
+            <label><input type="radio" name="B5" value="parfois"> Parfois</label>
+            <label><input type="radio" name="B5" value="jamais"> Jamais</label>
+
+            <p><strong>B6. Diriez-vous que ces services sont :</strong></p>
+            <label><input type="radio" name="B6" value="abordables"> Abordables</label>
+            <label><input type="radio" name="B6" value="chers"> Trop chers</label>
+            <label><input type="radio" name="B6" value="corrects"> Corrects pour le prix</label>
+            <label><input type="radio" name="B6" value="nspp"> Je ne sais pas</label>
+
+            <p><strong>B7. Votre critère le plus important pour choisir un mode de transport :</strong></p>
+            <label><input type="radio" name="B7" value="rapidite"> Rapidité</label>
+            <label><input type="radio" name="B7" value="prix"> Prix</label>
+            <label><input type="radio" name="B7" value="flexibilite"> Flexibilité</label>
+            <label><input type="radio" name="B7" value="securite"> Sécurité</label>
+            <label><input type="radio" name="B7" value="ecologie"> Impact écologique</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Transports écologiques</legend>
+
+            <p><strong>B8. Seriez-vous prêt(e) à utiliser un vélo électrique tous les jours ?</strong></p>
+            <label><input type="radio" name="B8" value="oui"> Oui</label>
+            <label><input type="radio" name="B8" value="non"> Non</label>
+            <label><input type="radio" name="B8" value="peut_etre"> Peut-être</label>
+
+            <p><strong>B9. Si non ou peut-être, pourquoi ?</strong></p>
+            <label><input type="checkbox" name="B9_distance" value="distance"> Distance trop longue</label>
+            <label><input type="checkbox" name="B9_securite" value="securite"> Manque de sécurité</label>
+            <label><input type="checkbox" name="B9_infra" value="infra"> Manque d’infrastructures</label>
+            <label><input type="checkbox" name="B9_fatigue" value="fatigue"> Fatigue / santé</label>
+
+            <p><strong>B10. Utilisez-vous des transports le soir ou la nuit (sorties) ?</strong></p>
+            <label><input type="radio" name="B10" value="oui"> Oui</label>
+            <label><input type="radio" name="B10" value="non"> Non</label>
+
+            <p><strong>B11. Pour les sorties, le transport non polluant le plus adapté vous semble :</strong></p>
+            <label><input type="radio" name="B11" value="tram"> Tramway</label>
+            <label><input type="radio" name="B11" value="bus_nuit"> Bus de nuit</label>
+            <label><input type="radio" name="B11" value="covoiturage"> Covoiturage électrique</label>
+            <label><input type="radio" name="B11" value="trottinette"> Trottinette / vélo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Perception de Nice</legend>
+
+            <p><strong>B12. Souhaiteriez-vous plus de transports en commun non polluants la nuit ?</strong></p>
+            <label><input type="radio" name="B12" value="oui"> Oui</label>
+            <label><input type="radio" name="B12" value="non"> Non</label>
+            <label><input type="radio" name="B12" value="sans_avis"> Sans avis</label>
+
+            <p><strong>B13. Seriez-vous intéressé(e) par un abonnement “mobilité écologique jeune” ?</strong></p>
+            <label><input type="radio" name="B13" value="oui"> Oui</label>
+            <label><input type="radio" name="B13" value="non"> Non</label>
+
+            <p><strong>B14. À votre avis, Nice est une ville :</strong></p>
+            <label><input type="radio" name="B14" value="favorable"> Favorable aux transports non polluants</label>
+            <label><input type="radio" name="B14" value="moyen"> Moyennement favorable</label>
+            <label><input type="radio" name="B14" value="peu"> Peu favorable</label>
+
+            <p><strong>B15. Que manque-t-il le plus pour encourager les jeunes à utiliser des transports non polluants ?</strong></p>
+            <label><input type="radio" name="B15" value="prix"> Prix plus bas</label>
+            <label><input type="radio" name="B15" value="infra"> Plus d’infrastructures</label>
+            <label><input type="radio" name="B15" value="securite"> Plus de sécurité</label>
+            <label><input type="radio" name="B15" value="com"> Meilleure communication</label>
+
+            <p><strong>B16. Seriez-vous prêt(e) à laisser la voiture si les transports non polluants étaient plus attractifs ?</strong></p>
+            <label><input type="radio" name="B16" value="oui"> Oui</label>
+            <label><input type="radio" name="B16" value="non"> Non</label>
+            <label><input type="radio" name="B16" value="peut_etre"> Peut-être</label>
+
+            <p><strong>B17. Recommanderiez-vous Nice à d’autres jeunes pour sa mobilité écologique ?</strong></p>
+            <label><input type="radio" name="B17" value="oui"> Oui</label>
+            <label><input type="radio" name="B17" value="non"> Non</label>
+            <label><input type="radio" name="B17" value="peut_etre"> Peut-être</label>
+
+            <p><strong>B18. Selon vous, la priorité de la ville devrait être :</strong></p>
+            <label><input type="radio" name="B18" value="libre_service"> Vélos / trottinettes en libre-service</label>
+            <label><input type="radio" name="B18" value="tc"> Tramway et bus électriques</label>
+            <label><input type="radio" name="B18" value="pistes"> Pistes cyclables</label>
+            <label><input type="radio" name="B18" value="covoiturage"> Covoiturage électrique</label>
+        </fieldset>
+
+        <p class="info-note">
+            Ce formulaire illustre la structure du questionnaire. Les réponses ne sont pas collectées.
+        </p>
+
+        <p><input type="submit" value="(Envoi fictif)"></p>
+
+    </form>
+</main>
+
+<footer>
+    <p>Projet S106 - Questionnaire 18–25 ans</p>
+</footer>
+
+</body>
+</html>
