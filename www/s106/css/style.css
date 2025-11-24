@@ -1,0 +1,36 @@
+/* Minimalistic sticky navigation */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+
+nav li {
+  margin: 0;
+}
