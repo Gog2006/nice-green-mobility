@@ -1,207 +1,578 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Questionnaire - Moins de 18 ans</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Questionnaire - Moins de 18 ans</h1>
+      <p>Transports non polluants à Nice</p>
+    </header>
 
-<header>
-    <h1>Questionnaire - Moins de 18 ans</h1>
-    <p>Transports non polluants à Nice</p>
-</header>
-
-<nav>
-    <ul class="menu">
+    <nav>
+      <ul class="menu">
         <li><a href="index.html">Accueil</a></li>
+        <li><a href="../s106/pages-societes/societes.html">Sociétés</a></li>
         <li><a href="questionnaire.html">Questionnaire</a></li>
-        <li><a href="solutions.html">Solutions proposées</a></li>
-        <li><a href="methodologie.html">Méthodologie</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
 
-<main>
-    <!-- FORMULAIRE RELIÉ AU GOOGLE FORM -->
-    <form class="questionnaire"
-          action="https://docs.google.com/forms/d/1HNiB5bq_puPtXPBOi5N_xMWMgm7dyPhzcYHC1jN679E/formResponse"
-          method="POST"
-          target="_blank">
-
+    <main>
+      <!-- FORMULAIRE RELIÉ AU GOOGLE FORM -->
+      <form
+        class="questionnaire"
+        action="https://docs.google.com/forms/d/1HNiB5bq_puPtXPBOi5N_xMWMgm7dyPhzcYHC1jN679E/formResponse"
+        method="POST"
+        target="_blank"
+      >
         <!-- ces champs cachés ne sont pas obligatoires pour la démo,
              tu peux les enlever si ça pose problème -->
-        <input type="hidden" name="fvv" value="1">
-        <input type="hidden" name="pageHistory" value="0">
-        <input type="hidden" name="fbzx" value="177054204002600350">
+        <input type="hidden" name="fvv" value="1" />
+        <input type="hidden" name="pageHistory" value="0" />
+        <input type="hidden" name="fbzx" value="177054204002600350" />
 
         <fieldset>
-            <legend>Profil</legend>
+          <legend>Profil</legend>
 
-            <!-- Q1 : Vous êtes / Tu es → entry.965744666 -->
-            <p><strong>Q1. Tu es :</strong></p>
-            <label><input type="radio" name="entry.965744666" value="Habitant(e) de Nice" required> Habitant(e) de Nice</label>
-            <label><input type="radio" name="entry.965744666" value="Touriste français"> Touriste français</label>
-            <label><input type="radio" name="entry.965744666" value="Touriste étranger"> Touriste étranger</label>
+          <!-- Q1 : Vous êtes / Tu es → entry.965744666 -->
+          <p><strong>Q1. Tu es :</strong></p>
+          <label
+            ><input
+              type="radio"
+              name="entry.965744666"
+              value="Habitant(e) de Nice"
+              required
+            />
+            Habitant(e) de Nice</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.965744666"
+              value="Touriste français"
+            />
+            Touriste français</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.965744666"
+              value="Touriste étranger"
+            />
+            Touriste étranger</label
+          >
 
-            <!-- Q2 fréquence : ne figure pas dans le Google Form d’origine,
+          <!-- Q2 fréquence : ne figure pas dans le Google Form d’origine,
                  donc elle ne sera PAS enregistrée dans Google Forms.
                  Je laisse le name comme avant pour ton prof. -->
-            <p><strong>Q2. À quelle fréquence utilises-tu les transports à Nice ?</strong></p>
-            <label><input type="radio" name="freq" value="quotidien"> Tous les jours</label>
-            <label><input type="radio" name="freq" value="hebdo"> Plusieurs fois par semaine</label>
-            <label><input type="radio" name="freq" value="occasionnel"> Occasionnellement</label>
-            <label><input type="radio" name="freq" value="rare"> Très rarement</label>
+          <p>
+            <strong
+              >Q2. À quelle fréquence utilises-tu les transports à Nice
+              ?</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="freq" value="quotidien" /> Tous les
+            jours</label
+          >
+          <label
+            ><input type="radio" name="freq" value="hebdo" /> Plusieurs fois par
+            semaine</label
+          >
+          <label
+            ><input type="radio" name="freq" value="occasionnel" />
+            Occasionnellement</label
+          >
+          <label
+            ><input type="radio" name="freq" value="rare" /> Très
+            rarement</label
+          >
         </fieldset>
 
         <fieldset>
-            <legend>Habitudes de déplacement</legend>
+          <legend>Habitudes de déplacement</legend>
 
-            <!-- A1 → entry.689531544 -->
-            <p><strong>A1. Comment te rends-tu le plus souvent à ton établissement scolaire ?</strong></p>
-            <label><input type="radio" name="entry.689531544" value="À pied" required> À pied</label>
-            <label><input type="radio" name="entry.689531544" value="Bus"> Bus</label>
-            <label><input type="radio" name="entry.689531544" value="Tramway"> Tramway</label>
-            <label><input type="radio" name="entry.689531544" value="Vélo"> Vélo</label>
-            <label><input type="radio" name="entry.689531544" value="Trotinette"> Trottinette</label>
-            <label><input type="radio" name="entry.689531544" value="Voiture familiale"> Voiture familiale</label>
+          <!-- A1 → entry.689531544 -->
+          <p>
+            <strong
+              >A1. Comment te rends-tu le plus souvent à ton établissement
+              scolaire ?</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.689531544"
+              value="À pied"
+              required
+            />
+            À pied</label
+          >
+          <label
+            ><input type="radio" name="entry.689531544" value="Bus" />
+            Bus</label
+          >
+          <label
+            ><input type="radio" name="entry.689531544" value="Tramway" />
+            Tramway</label
+          >
+          <label
+            ><input type="radio" name="entry.689531544" value="Vélo" />
+            Vélo</label
+          >
+          <label
+            ><input type="radio" name="entry.689531544" value="Trotinette" />
+            Trottinette</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.689531544"
+              value="Voiture familiale"
+            />
+            Voiture familiale</label
+          >
 
-            <!-- A2 → entry.1770274563 -->
-            <p><strong>A2. La distance entre ton domicile et ton établissement est d’environ :</strong></p>
-            <label><input type="radio" name="entry.1770274563" value="Moin de 1km" required> Moins de 1 km</label>
-            <label><input type="radio" name="entry.1770274563" value="1-3km"> 1–3 km</label>
-            <label><input type="radio" name="entry.1770274563" value="3-7km"> 3–7 km</label>
-            <label><input type="radio" name="entry.1770274563" value="Plus de 7km"> Plus de 7 km</label>
+          <!-- A2 → entry.1770274563 -->
+          <p>
+            <strong
+              >A2. La distance entre ton domicile et ton établissement est
+              d’environ :</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.1770274563"
+              value="Moin de 1km"
+              required
+            />
+            Moins de 1 km</label
+          >
+          <label
+            ><input type="radio" name="entry.1770274563" value="1-3km" /> 1–3
+            km</label
+          >
+          <label
+            ><input type="radio" name="entry.1770274563" value="3-7km" /> 3–7
+            km</label
+          >
+          <label
+            ><input type="radio" name="entry.1770274563" value="Plus de 7km" />
+            Plus de 7 km</label
+          >
 
-            <!-- A3 → entry.1936930301 -->
-            <p><strong>A3. Utilises-tu un moyen de transport non polluant ?</strong></p>
-            <label><input type="radio" name="entry.1936930301" value="Oui" required> Oui</label>
-            <label><input type="radio" name="entry.1936930301" value="Non"> Non</label>
-            <label><input type="radio" name="entry.1936930301" value="Parfois"> Parfois</label>
+          <!-- A3 → entry.1936930301 -->
+          <p>
+            <strong
+              >A3. Utilises-tu un moyen de transport non polluant ?</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="entry.1936930301" value="Oui" required />
+            Oui</label
+          >
+          <label
+            ><input type="radio" name="entry.1936930301" value="Non" />
+            Non</label
+          >
+          <label
+            ><input type="radio" name="entry.1936930301" value="Parfois" />
+            Parfois</label
+          >
 
-            <!-- A4 → entry.723131473 -->
-            <p><strong>A4. Si tu n’utilises pas de transport non polluant pour aller à l’école, pourquoi ?</strong></p>
-            <label><input type="radio" name="entry.723131473" value="Trop loin" required> Trop loin</label>
-            <label><input type="radio" name="entry.723131473" value="Pas assez sécurisé"> Pas assez sécurisé</label>
-            <label><input type="radio" name="entry.723131473" value="Habitude de la voiture"> Habitude de la voiture</label>
-            <label><input type="radio" name="entry.723131473" value="Manque de pistes cyclables"> Manque de pistes cyclables</label>
-            <label><input type="radio" name="entry.723131473" value="Autres"> Autre</label>
+          <!-- A4 → entry.723131473 -->
+          <p>
+            <strong
+              >A4. Si tu n’utilises pas de transport non polluant pour aller à
+              l’école, pourquoi ?</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.723131473"
+              value="Trop loin"
+              required
+            />
+            Trop loin</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.723131473"
+              value="Pas assez sécurisé"
+            />
+            Pas assez sécurisé</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.723131473"
+              value="Habitude de la voiture"
+            />
+            Habitude de la voiture</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.723131473"
+              value="Manque de pistes cyclables"
+            />
+            Manque de pistes cyclables</label
+          >
+          <label
+            ><input type="radio" name="entry.723131473" value="Autres" />
+            Autre</label
+          >
         </fieldset>
 
         <fieldset>
-            <legend>Sécurité et infrastructures</legend>
+          <legend>Sécurité et infrastructures</legend>
 
-            <!-- A5 → entry.1965938546 -->
-            <p><strong>A5. Te sens-tu en sécurité à vélo à Nice ?</strong></p>
-            <label><input type="radio" name="entry.1965938546" value="Oui" required> Oui</label>
-            <label><input type="radio" name="entry.1965938546" value="Non"> Non</label>
-            <label><input type="radio" name="entry.1965938546" value="Un peu"> Un peu</label>
+          <!-- A5 → entry.1965938546 -->
+          <p><strong>A5. Te sens-tu en sécurité à vélo à Nice ?</strong></p>
+          <label
+            ><input type="radio" name="entry.1965938546" value="Oui" required />
+            Oui</label
+          >
+          <label
+            ><input type="radio" name="entry.1965938546" value="Non" />
+            Non</label
+          >
+          <label
+            ><input type="radio" name="entry.1965938546" value="Un peu" /> Un
+            peu</label
+          >
 
-            <!-- A6 → entry.1812454261 -->
-            <p><strong>A6. Près de ton établissement, les pistes cyclables sont :</strong></p>
-            <label><input type="radio" name="entry.1812454261" value="Nombreuses et sécurisées" required> Nombreuses et sécurisées</label>
-            <label><input type="radio" name="entry.1812454261" value="Présentes mais peu sécurisées"> Présentes mais peu sécurisées</label>
-            <label><input type="radio" name="entry.1812454261" value="Peu nombreuses"> Peu nombreuses</label>
-            <label><input type="radio" name="entry.1812454261" value="Inexistantes"> Inexistantes</label>
+          <!-- A6 → entry.1812454261 -->
+          <p>
+            <strong
+              >A6. Près de ton établissement, les pistes cyclables sont
+              :</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.1812454261"
+              value="Nombreuses et sécurisées"
+              required
+            />
+            Nombreuses et sécurisées</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.1812454261"
+              value="Présentes mais peu sécurisées"
+            />
+            Présentes mais peu sécurisées</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.1812454261"
+              value="Peu nombreuses"
+            />
+            Peu nombreuses</label
+          >
+          <label
+            ><input type="radio" name="entry.1812454261" value="Inexistantes" />
+            Inexistantes</label
+          >
 
-            <!-- A7 → entry.893487576 -->
-            <p><strong>A7. Si les pistes cyclables étaient mieux sécurisées, utiliserais-tu davantage le vélo ?</strong></p>
-            <label><input type="radio" name="entry.893487576" value="Oui" required> Oui</label>
-            <label><input type="radio" name="entry.893487576" value="Non"> Non</label>
-            <label><input type="radio" name="entry.893487576" value="Peut-être"> Peut-être</label>
+          <!-- A7 → entry.893487576 -->
+          <p>
+            <strong
+              >A7. Si les pistes cyclables étaient mieux sécurisées,
+              utiliserais-tu davantage le vélo ?</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="entry.893487576" value="Oui" required />
+            Oui</label
+          >
+          <label
+            ><input type="radio" name="entry.893487576" value="Non" />
+            Non</label
+          >
+          <label
+            ><input type="radio" name="entry.893487576" value="Peut-être" />
+            Peut-être</label
+          >
         </fieldset>
 
         <fieldset>
-            <legend>Trottinettes / vélos en libre-service</legend>
+          <legend>Trottinettes / vélos en libre-service</legend>
 
-            <!-- A8 → entry.1787380034 -->
-            <p><strong>A8. Utilises-tu des trottinettes ou vélos en libre-service à Nice ?</strong></p>
-            <label><input type="radio" name="entry.1787380034" value="Oui, souvent" required> Oui, souvent</label>
-            <label><input type="radio" name="entry.1787380034" value="Parfois"> Parfois</label>
-            <label><input type="radio" name="entry.1787380034" value="Jamais"> Jamais</label>
+          <!-- A8 → entry.1787380034 -->
+          <p>
+            <strong
+              >A8. Utilises-tu des trottinettes ou vélos en libre-service à Nice
+              ?</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.1787380034"
+              value="Oui, souvent"
+              required
+            />
+            Oui, souvent</label
+          >
+          <label
+            ><input type="radio" name="entry.1787380034" value="Parfois" />
+            Parfois</label
+          >
+          <label
+            ><input type="radio" name="entry.1787380034" value="Jamais" />
+            Jamais</label
+          >
 
-            <!-- A9 → entry.98925683 (checkboxes, même name pour tous) -->
-            <p><strong>A9. Selon toi, ces trottinettes/vélos sont :</strong></p>
-            <label><input type="checkbox" name="entry.98925683" value="Pratiques"> Pratiques</label>
-            <label><input type="checkbox" name="entry.98925683" value="Trop chers"> Trop chers</label>
-            <label><input type="checkbox" name="entry.98925683" value="Dangereux"> Dangereux</label>
-            <label><input type="checkbox" name="entry.98925683" value="Mal rangés sur les trottoirs"> Mal rangés sur les trottoirs</label>
+          <!-- A9 → entry.98925683 (checkboxes, même name pour tous) -->
+          <p><strong>A9. Selon toi, ces trottinettes/vélos sont :</strong></p>
+          <label
+            ><input type="checkbox" name="entry.98925683" value="Pratiques" />
+            Pratiques</label
+          >
+          <label
+            ><input type="checkbox" name="entry.98925683" value="Trop chers" />
+            Trop chers</label
+          >
+          <label
+            ><input type="checkbox" name="entry.98925683" value="Dangereux" />
+            Dangereux</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="entry.98925683"
+              value="Mal rangés sur les trottoirs"
+            />
+            Mal rangés sur les trottoirs</label
+          >
         </fieldset>
 
         <fieldset>
-            <legend>Perception des transports non polluants</legend>
+          <legend>Perception des transports non polluants</legend>
 
-            <!-- A10 → entry.206461114 -->
-            <p><strong>A10. Serais-tu favorable à plus de zones piétonnes autour des écoles et collèges ?</strong></p>
-            <label><input type="radio" name="entry.206461114" value="Oui" required> Oui</label>
-            <label><input type="radio" name="entry.206461114" value="Non"> Non</label>
-            <label><input type="radio" name="entry.206461114" value="Sans avis"> Sans avis</label>
+          <!-- A10 → entry.206461114 -->
+          <p>
+            <strong
+              >A10. Serais-tu favorable à plus de zones piétonnes autour des
+              écoles et collèges ?</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="entry.206461114" value="Oui" required />
+            Oui</label
+          >
+          <label
+            ><input type="radio" name="entry.206461114" value="Non" />
+            Non</label
+          >
+          <label
+            ><input type="radio" name="entry.206461114" value="Sans avis" />
+            Sans avis</label
+          >
 
-            <!-- A11 → entry.569012984 -->
-            <p><strong>A11. Le prix des transports (tram, bus) te semble :</strong></p>
-            <label><input type="radio" name="entry.569012984" value="Abordable" required> Abordable</label>
-            <label><input type="radio" name="entry.569012984" value="Trop élevé"> Trop élevé</label>
-            <label><input type="radio" name="entry.569012984" value="Je ne sais pas"> Je ne sais pas</label>
+          <!-- A11 → entry.569012984 -->
+          <p>
+            <strong>A11. Le prix des transports (tram, bus) te semble :</strong>
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.569012984"
+              value="Abordable"
+              required
+            />
+            Abordable</label
+          >
+          <label
+            ><input type="radio" name="entry.569012984" value="Trop élevé" />
+            Trop élevé</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.569012984"
+              value="Je ne sais pas"
+            />
+            Je ne sais pas</label
+          >
 
-            <!-- A12 → entry.1855192533 -->
-            <p><strong>A12. Quel mode de transport non polluant te semblerait le plus pratique pour toi à Nice ?</strong></p>
-            <label><input type="radio" name="entry.1855192533" value="Vélo" required> Vélo</label>
-            <label><input type="radio" name="entry.1855192533" value="Trottinette"> Trottinette</label>
-            <label><input type="radio" name="entry.1855192533" value="Marche"> Marche</label>
-            <label><input type="radio" name="entry.1855192533" value="Tramway"> Tramway</label>
-            <label><input type="radio" name="entry.1855192533" value="Bus électrique"> Bus électrique</label>
+          <!-- A12 → entry.1855192533 -->
+          <p>
+            <strong
+              >A12. Quel mode de transport non polluant te semblerait le plus
+              pratique pour toi à Nice ?</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.1855192533"
+              value="Vélo"
+              required
+            />
+            Vélo</label
+          >
+          <label
+            ><input type="radio" name="entry.1855192533" value="Trottinette" />
+            Trottinette</label
+          >
+          <label
+            ><input type="radio" name="entry.1855192533" value="Marche" />
+            Marche</label
+          >
+          <label
+            ><input type="radio" name="entry.1855192533" value="Tramway" />
+            Tramway</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.1855192533"
+              value="Bus électrique"
+            />
+            Bus électrique</label
+          >
 
-            <!-- A13 → entry.784272478 -->
-            <p><strong>A13. Aimerais-tu que la ville propose des vélos gratuits ou très peu chers pour les élèves ?</strong></p>
-            <label><input type="radio" name="entry.784272478" value="Oui" required> Oui</label>
-            <label><input type="radio" name="entry.784272478" value="Non"> Non</label>
-            <label><input type="radio" name="entry.784272478" value="Peut-être"> Peut-être</label>
+          <!-- A13 → entry.784272478 -->
+          <p>
+            <strong
+              >A13. Aimerais-tu que la ville propose des vélos gratuits ou très
+              peu chers pour les élèves ?</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="entry.784272478" value="Oui" required />
+            Oui</label
+          >
+          <label
+            ><input type="radio" name="entry.784272478" value="Non" />
+            Non</label
+          >
+          <label
+            ><input type="radio" name="entry.784272478" value="Peut-être" />
+            Peut-être</label
+          >
 
-            <!-- A14 → entry.554248136 -->
-            <p><strong>A14. Te semblerait-il utile d’avoir plus d’abris à vélos sécurisés près de ton établissement ?</strong></p>
-            <label><input type="radio" name="entry.554248136" value="Oui" required> Oui</label>
-            <label><input type="radio" name="entry.554248136" value="Non"> Non</label>
+          <!-- A14 → entry.554248136 -->
+          <p>
+            <strong
+              >A14. Te semblerait-il utile d’avoir plus d’abris à vélos
+              sécurisés près de ton établissement ?</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="entry.554248136" value="Oui" required />
+            Oui</label
+          >
+          <label
+            ><input type="radio" name="entry.554248136" value="Non" />
+            Non</label
+          >
         </fieldset>
 
         <fieldset>
-            <legend>Autres déplacements</legend>
+          <legend>Autres déplacements</legend>
 
-            <!-- A15 → entry.604564172 -->
-            <p><strong>A15. En dehors de l’école, pour tes activités (sport, amis, loisirs), tu te déplaces surtout :</strong></p>
-            <label><input type="radio" name="entry.604564172" value="À pied" required> À pied</label>
-            <label><input type="radio" name="entry.604564172" value="En voiture"> En voiture</label>
-            <label><input type="radio" name="entry.604564172" value="En transports en commun"> En transports en commun</label>
-            <label><input type="radio" name="entry.604564172" value="En vélo/trottinette"> En vélo/trottinette</label>
+          <!-- A15 → entry.604564172 -->
+          <p>
+            <strong
+              >A15. En dehors de l’école, pour tes activités (sport, amis,
+              loisirs), tu te déplaces surtout :</strong
+            >
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="entry.604564172"
+              value="À pied"
+              required
+            />
+            À pied</label
+          >
+          <label
+            ><input type="radio" name="entry.604564172" value="En voiture" /> En
+            voiture</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.604564172"
+              value="En transports en commun"
+            />
+            En transports en commun</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="entry.604564172"
+              value="En vélo/trottinette"
+            />
+            En vélo/trottinette</label
+          >
 
-            <!-- A16 et A17 n’apparaissent pas dans le Google Form transmis,
+          <!-- A16 et A17 n’apparaissent pas dans le Google Form transmis,
                  donc je les laisse comme questions “locales” non stockées. -->
 
-            <p><strong>A16. Pour ces déplacements, serais-tu prêt(e) à utiliser plus souvent un moyen non polluant si c’était mieux adapté ?</strong></p>
-            <label><input type="radio" name="A16" value="oui"> Oui</label>
-            <label><input type="radio" name="A16" value="non"> Non</label>
-            <label><input type="radio" name="A16" value="peut_etre"> Peut-être</label>
+          <p>
+            <strong
+              >A16. Pour ces déplacements, serais-tu prêt(e) à utiliser plus
+              souvent un moyen non polluant si c’était mieux adapté ?</strong
+            >
+          </p>
+          <label><input type="radio" name="A16" value="oui" /> Oui</label>
+          <label><input type="radio" name="A16" value="non" /> Non</label>
+          <label
+            ><input type="radio" name="A16" value="peut_etre" />
+            Peut-être</label
+          >
 
-            <p><strong>A17. Selon toi, Nice devrait en priorité développer :</strong></p>
-            <label><input type="radio" name="A17" value="pistes"> Plus de pistes cyclables</label>
-            <label><input type="radio" name="A17" value="tc_non_poll"> Plus de transports en commun non polluants</label>
-            <label><input type="radio" name="A17" value="zones_pietonnes"> Plus de zones piétonnes</label>
-            <label><input type="radio" name="A17" value="libre_service"> Plus de trottinettes/vélos en libre-service</label>
+          <p>
+            <strong
+              >A17. Selon toi, Nice devrait en priorité développer :</strong
+            >
+          </p>
+          <label
+            ><input type="radio" name="A17" value="pistes" /> Plus de pistes
+            cyclables</label
+          >
+          <label
+            ><input type="radio" name="A17" value="tc_non_poll" /> Plus de
+            transports en commun non polluants</label
+          >
+          <label
+            ><input type="radio" name="A17" value="zones_pietonnes" /> Plus de
+            zones piétonnes</label
+          >
+          <label
+            ><input type="radio" name="A17" value="libre_service" /> Plus de
+            trottinettes/vélos en libre-service</label
+          >
         </fieldset>
 
         <p class="info-note">
-            Ce questionnaire est affiché en HTML pour le projet S106.
-            Certaines réponses sont également envoyées vers un Google Form pour analyse statistique.
+          Ce questionnaire est affiché en HTML pour le projet S106. Certaines
+          réponses sont également envoyées vers un Google Form pour analyse
+          statistique.
         </p>
 
         <p>
-            <input type="submit" value="Envoyer mes réponses">
+          <input type="submit" value="Envoyer mes réponses" />
         </p>
+      </form>
+    </main>
 
-    </form>
-</main>
-
-<footer>
-    <p>Projet S106 - Questionnaire moins de 18 ans</p>
-</footer>
-
-</body>
+    <footer>
+      <p>Projet S106 - Questionnaire moins de 18 ans</p>
+    </footer>
+  </body>
 </html>
