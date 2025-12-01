@@ -6,27 +6,16 @@ main {
   color: #333333;
   background-color: #e4cfcf;
 }
-
+/* Nav */
 nav {
   position: sticky;
+  justify-self: center;
   top: 0;
-  max-width: 1200px;
-  z-index: 100;
-  nav {
-    position: sticky;
-    top: 0;
-    max-width: 1200px;
-    z-index: 100;
-    margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 1.2rem 0;
-    backdrop-filter: blur(10px);
-    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 1.2rem 0;
+  padding: 0;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom-left-radius: 15px;
@@ -107,3 +96,11 @@ nav li:first-child a {
     padding: 1rem 0;
   }
 }
+/* Fin de Nav */
+
+/* Header */
+.header-1 {
+  display: flex;
+  justify-content: center;
+}
+/* Fin de Header */
