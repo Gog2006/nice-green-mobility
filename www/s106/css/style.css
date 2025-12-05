@@ -103,12 +103,16 @@ a {
 .cards-wrapper {
   display: grid;
   justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4rem;
-  padding: 4rem;
+  justify-items: center;
+  align-items: start;
+  /* Default: 3 equal columns on wide screens */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  padding: 2.5rem;
   margin: 0 auto;
-  width: max-content;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .card {
@@ -119,19 +123,20 @@ a {
       rgba(0, 0, 0, var(--bg-filter-opacity))
     ),
     var(--bg-img);
-  height: 20em;
-  width: 15em;
+  /* Let the card fill the grid cell; constrain with max-width so cards don't grow too wide */
+  width: 100%;
+  max-width: 360px;
+  height: 20rem;
   font-size: 1.5em;
   color: white;
   border-radius: 1em;
   padding: 1em;
-  /*margin: 2em;*/
   display: flex;
   align-items: flex-end;
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 5em -1em black;
-  transition: all, var(--transition-time);
+  transition: all var(--transition-time);
   position: relative;
   overflow: hidden;
   border: 10px solid #ccc;
@@ -235,13 +240,18 @@ a {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
   .cards-wrapper {
-    grid-template-columns: 1fr 1fr;
+    /* Tablet: 2 columns */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 900px) {
   .cards-wrapper {
+    /* Small screens / phones: single column, centered */
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
   .info {
     justify-content: center;
@@ -254,10 +264,12 @@ a {
 
 @media screen and (max-width: 500px) {
   .cards-wrapper {
-    padding: 4rem 2rem;
+    padding: 2.5rem 1rem;
   }
   .card {
-    max-width: calc(100vw - 4rem);
+    max-width: 100%;
+    height: 14rem;
+    border-width: 6px;
   }
 }
 
