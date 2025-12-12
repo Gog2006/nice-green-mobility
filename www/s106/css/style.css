@@ -308,3 +308,84 @@ a {
   justify-content: center;
 }
 /* Fin de Header */
+
+/* Page sections / article cards */
+.section-card {
+  background: #ffffff;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(60, 49, 99, 0.04);
+}
+.section-card h2 {
+  margin-top: 0;
+  color: var(--color);
+  font-size: 1.25rem;
+}
+.section-card h3 {
+  color: #333333;
+}
+.section-card p,
+.section-card li {
+  color: #444444;
+  line-height: 1.6;
+}
+
+/* Hero / section images */
+.hero {
+  margin: 1.25rem 0 0.75rem 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.hero-image,
+.section-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .section-card {
+    padding: 1rem;
+  }
+}
+
+/* Tables used in pages-societes */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.data-table th,
+.data-table td {
+  border: 1px solid #e6e0e0;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: middle;
+}
+.data-table th {
+  background: linear-gradient(
+    90deg,
+    rgba(60, 49, 99, 0.06),
+    rgba(60, 49, 99, 0.03)
+  );
+  color: var(--color);
+  font-weight: 700;
+}
+.data-table tr:nth-child(even) td {
+  background: #fbf9fc;
+}
+
+@media (max-width: 600px) {
+  .data-table th,
+  .data-table td {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.95rem;
+  }
+}
