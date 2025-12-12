@@ -1,7 +1,7 @@
 /* la base de normalisation des styles CSS */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -18,14 +18,14 @@ h1 {
 }
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 a {
@@ -33,9 +33,9 @@ a {
 }
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -266,7 +266,7 @@ nav li:first-child a {
 
 /* Cartes */
 :root {
-  --color: #3c3163;
+  --color: #2985aa;
   --transition-time: 0.5s;
 }
 
@@ -534,6 +534,45 @@ a {
 @media (max-width: 900px) {
   .section-card {
     padding: 1rem;
+  }
+}
+
+/* Age-links (questionnaire choices) */
+.age-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.age-links li {
+  margin: 0;
+}
+.age-links .age-btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--color);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.12s ease;
+}
+.age-links .age-btn:hover,
+.age-links .age-btn:focus {
+  background: #311791;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .age-links ul {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .age-links .age-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
