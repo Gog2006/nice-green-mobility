@@ -29,6 +29,7 @@ Le site présente :
 - `www/s106/QCM/` : questionnaire et pages liées.
 - `www/s106/pages-societes/` : pages descriptives des acteurs.
 - `auteurs.txt` : fichier obligatoire indiquant le nom du groupe (1ère ligne) puis chaque membre sur une ligne.
+- `www/s106/methodologie.html` : page décrivant la méthodologie d'enquête (taille d'échantillon, échantillonnage, collecte via Google Forms).
 
 ## Démarrage rapide
 

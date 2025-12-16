@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Méthodologie - Enquête Nice Green Mobility</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages-societes/societes.html">Sociétés</a></li>
+        <li><a href="QCM/questionnaire.html">Questionnaire</a></li>
+      </ul>
+    </nav>
+    <header class="header-1">
+      <h1>Méthodologie de l'enquête</h1>
+    </header>
+    <main>
+      <section class="section-card">
+        <h2>Objectifs de l'enquête</h2>
+        <ul>
+          <li>
+            Mesurer les pratiques de déplacement des Niçois et des touristes.
+          </li>
+          <li>
+            Évaluer l'acceptation et la demande pour des transports non
+            polluants.
+          </li>
+          <li>
+            Identifier les freins et leviers pour augmenter les usages propres
+            (tram, bus électriques, vélo, etc.).
+          </li>
+          <li>
+            Fournir des données exploitables pour dimensionner les solutions et
+            estimer les coûts.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-card">
+        <h2>Mode de recueil des données</h2>
+        <p>
+          Le questionnaire est diffusé principalement en ligne via
+          <strong>Google Forms</strong>. Cette solution permet de créer des
+          formulaires avec logique (questions conditionnelles selon l'âge), de
+          collecter automatiquement les réponses et d'exporter les données au
+          format CSV pour analyse.
+        </p>
+        <p>
+          Pour compléter l'échantillon, des collectes sur le terrain (entretiens
+          rapides, QR codes placés sur des terminaux, distribution du lien dans
+          des points fréquentés) peuvent être réalisées afin d'augmenter la
+          représentativité des répondants peu présents en ligne.
+        </p>
+      </section>
+
+      <section class="section-card">
+        <h2>Questionnaire dépendant de l'âge</h2>
+        <p>
+          Le questionnaire utilise un cheminement conditionnel : la première
+          question porte sur la tranche d'âge. Selon la tranche d'âge, certaines
+          questions spécifiques apparaissent (par ex. habitudes de travail pour
+          25-64 ans, scolarité et accompagnement pour les moins de 18 ans,
+          besoins spécifiques pour les plus de 65 ans). Cette approche réduit la
+          fatigue du répondant et permet des analyses ciblées par groupe d'âge.
+        </p>
+        <p>
+          Dans le site, chaque tranche d'âge a sa page de QCM dédiée (dossier
+          `QCM/`) pour simplifier la navigation et l'impression des
+          questionnaires.
+        </p>
+      </section>
+
+      <section class="section-card">
+        <h2>Taille d'échantillon : justification</h2>
+        <p>
+          Pour estimer une proportion avec une précision raisonnable, on utilise
+          la formule classique pour un intervalle de confiance de 95 % :
+        </p>
+        <p class="equation">
+          n = (Z<sup>2</sup> × p × (1 − p)) / E<sup>2</sup>
+        </p>
+        <p>
+          Avec Z = 1,96 (95%); p = 0,5 (pire cas, maximale variance); E = marge
+          d'erreur souhaitée (ex. 0,05 → 5%). En remplaçant :
+        </p>
+        <p class="equation">
+          n ≈ (1,96<sup>2</sup> × 0,5 × 0,5) / 0,05<sup>2</sup> ≈ 384
+        </p>
+        <p>
+          Nous visons donc un échantillon de l'ordre de
+          <strong>400 réponses</strong> minimum pour obtenir une marge d'erreur
+          proche de ±5% sur des proportions. Pour des analyses par tranche
+          d'âge, il faudra répartir ce total entre les strates (ex. moins de 18,
+          18–25, 25–40, 40–65, plus de 65). Si l'on souhaite une précision de 5%
+          par strate, il faudra ~400 réponses par strate, ce qui augmente
+          fortement la taille globale nécessaire ; en pratique, on priorise la
+          précision sur les groupes les plus importants et on utilise un calcul
+          d'incertitude plus large pour les strates avec moins de répondants.
+        </p>
+      </section>
+
+      <section class="section-card">
+        <h2>Méthode d'échantillonnage</h2>
+        <p>
+          Méthode proposée :
+          <strong>échantillonnage stratifié par âge</strong> avec quotas. On
+          fixe des quotas par tranche d'âge et par statut (résident / touriste)
+          en se référant aux proportions estimées de la population locale et au
+          flux touristique (saisonnalité). Les réponses sont collectées :
+        </p>
+        <ul>
+          <li>
+            En ligne (Google Forms) : diffusion par réseaux sociaux, sites
+            locaux, QR codes.
+          </li>
+          <li>
+            En face-à-face : points de passage (gares, gares routières, stations
+            de tram) pour atteindre les non-usagers du web.
+          </li>
+        </ul>
+        <p>
+          Cette méthode combine la facilité de collecte en ligne et la
+          correction possible par pondération a posteriori (répondants
+          surreprésentés / sous-représentés) pour obtenir des estimations
+          proches de la population cible.
+        </p>
+      </section>
+
+      <section class="section-card">
+        <h2>Forme des questions</h2>
+        <ul>
+          <li>
+            Questions fermées (choix unique) pour les statistiques descriptives
+            (ex. mode principal de déplacement).
+          </li>
+          <li>
+            Échelles de Likert (1–5) pour mesurer l'accord / la satisfaction /
+            la propension à utiliser une solution.
+          </li>
+          <li>
+            Questions à choix multiples pour usages multiples (ex. combinaisons
+            de modes de transport).
+          </li>
+          <li>
+            Questions ouvertes limitées pour recueillir suggestions et
+            clarifications (toujours facultatives).
+          </li>
+          <li>
+            Questions conditionnelles (affichées selon l'âge ou réponses
+            précédentes) pour alléger le questionnaire.
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-card">
+        <h2>Collecte et traitement des données (Google Forms)</h2>
+        <p>
+          Google Forms permet d'exporter les réponses en CSV/Google Sheets. Pour
+          l'analyse :
+        </p>
+        <ul>
+          <li>
+            Export CSV puis nettoyage (suppression des doublons, vérification de
+            la cohérence).
+          </li>
+          <li>
+            Application de pondérations si nécessaire pour corriger les écarts
+            vis-à-vis de la population cible.
+          </li>
+          <li>
+            Analyse descriptive (fréquences, moyennes), croisements (mode par
+            âge), et visualisations (graphiques) pour éclairer les décisions.
+          </li>
+        </ul>
+        <p>
+          Respect de la vie privée : ne pas collecter d'informations
+          personnelles identifiantes (nom, adresse complète, etc.) sauf si
+          nécessaire et avec consentement explicite. Stocker les données
+          exportées dans un emplacement sécurisé et limiter l'accès.
+        </p>
+      </section>
+
+      <section class="section-card">
+        <h2>Utilité des réponses pour le projet</h2>
+        <p>Les réponses servent à :</p>
+        <ul>
+          <li>
+            Estimer la demande pour des lignes, fréquences et infrastructures
+            (pistes cyclables, stationnements, bornes de recharge).
+          </li>
+          <li>
+            Prioriser les investissements en fonction des usages et des freins
+            identifiés (coûts / bénéfices sociaux).
+          </li>
+          <li>
+            Mesurer l'adhésion publique aux solutions proposées et adapter la
+            communication / incitations.
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>&copy; Projet Nice Green Mobility</p>
+      </footer>
+    </main>
+  </body>
+</html>

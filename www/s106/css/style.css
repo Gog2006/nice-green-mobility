@@ -479,6 +479,14 @@ a {
   background: #f1f8f4;
 }
 
+.equation {
+  font-family: "Times New Roman", serif;
+  font-size: 1.2em;
+  color: #333;
+  display: block;
+  margin: 10px 0;
+}
+
 @media (max-width: 600px) {
   .data-table th,
   .data-table td {
@@ -498,10 +506,15 @@ a {
     background: #fff !important;
     color: #000 !important;
   }
+  /* Masquer les éléments de navigation, actions et décorations non pertinents à l'impression */
   nav,
   .age-links,
   nav ul,
-  nav a {
+  nav a,
+  .menu,
+  .qcm-actions,
+  .progress,
+  footer {
     display: none !important;
   }
   .cards-wrapper,
