@@ -1,7 +1,4 @@
-Info 1
-Groupe 03
-Groupe I 
-
+G3C
 Oleksandr Dzhafarov
 Leïya Khnati
 Ouassim Fekhart
