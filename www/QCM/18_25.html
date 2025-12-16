@@ -2,416 +2,624 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Questionnaire - 18–25 ans</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../s106/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Questionnaire - 18–25 ans</h1>
-      <p>Transports non polluants à Nice</p>
-    </header>
-
     <nav>
       <ul class="menu">
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="/www/s106/index.html">Accueil</a></li>
         <li><a href="../s106/pages-societes/societes.html">Sociétés</a></li>
         <li><a href="questionnaire.html">Questionnaire</a></li>
       </ul>
     </nav>
 
+    <header>
+      <h1>Questionnaire - 18–25 ans</h1>
+      <p>Transports non polluants à Nice</p>
+    </header>
+
     <main>
-      <!-- FORMULAIRE RELIÉ À UN GOOGLE FORM -->
-      <!-- Quand tu auras le bon Google Form "18–25 ans" :
-         1) change l'ID dans l'URL ci-dessous
-         2) remplace les name="B1", "B2", etc. par les name="entry.xxxxx" de ton Ctrl+U -->
+      <!-- FORMULAIRE RELIÉ AU GOOGLE FORM 18–25 ans -->
       <form
         class="questionnaire"
-        action="https://docs.google.com/forms/d/1r0sWvPmiqqB9DFUqoVdricGvzbVu6tOfITV_wqciZl8/formResponse"
+        action="https://docs.google.com/forms/d/12LPIk7dAPQ_DTfArxOj5sxhCFr8SUSUTgtdMFwjJpc8/formResponse"
         method="POST"
         target="_blank"
       >
-        <!-- Champs cachés facultatifs : tu peux les laisser vides ou les enlever -->
+        <!-- Champs cachés (facultatif, tu peux les enlever si ça gêne) -->
         <!--
-        <input type="hidden" name="fvv" value="1">
-        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fvv" value="1" />
+        <input type="hidden" name="pageHistory" value="0" />
         <input type="hidden" name="fbzx" value="">
         -->
 
         <fieldset>
           <legend>Profil</legend>
 
+          <!-- Q1 → entry.1488690509 -->
           <p><strong>Q1. Vous êtes :</strong></p>
-          <label
-            ><input type="radio" name="profil" value="Habitant(e) de Nice" />
-            Habitant(e) de Nice</label
-          >
-          <label
-            ><input type="radio" name="profil" value="Touriste français" />
-            Touriste français</label
-          >
-          <label
-            ><input type="radio" name="profil" value="Touriste étranger" />
-            Touriste étranger</label
-          >
+          <label>
+            <input
+              type="radio"
+              name="entry.1488690509"
+              value="Habitant(e) de Nice"
+              required
+            />
+            Habitant(e) de Nice
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.1488690509"
+              value="Touriste français"
+            />
+            Touriste français
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.1488690509"
+              value="Touriste étranger"
+            />
+            Touriste étranger
+          </label>
 
+          <!-- Q2 → entry.5977616 -->
           <p><strong>Q2. Votre situation principale :</strong></p>
-          <label
-            ><input type="radio" name="B1" value="Étudiant(e)" />
-            Étudiant(e)</label
-          >
-          <label
-            ><input type="radio" name="B1" value="Salarié(e)" />
-            Salarié(e)</label
-          >
-          <label
-            ><input type="radio" name="B1" value="Alternant(e)" />
-            Alternant(e)</label
-          >
-          <label><input type="radio" name="B1" value="Autre" /> Autre</label>
+          <label>
+            <input
+              type="radio"
+              name="entry.5977616"
+              value="Étudiant(e)"
+              required
+            />
+            Étudiant(e)
+          </label>
+          <label>
+            <input type="radio" name="entry.5977616" value="Salarié(e)" />
+            Salarié(e)
+          </label>
+          <label>
+            <input type="radio" name="entry.5977616" value="Alternant(e)" />
+            Alternant(e)
+          </label>
+          <label>
+            <input type="radio" name="entry.5977616" value="Autre" />
+            Autre
+          </label>
 
+          <!-- Q3 → entry.50849965 -->
           <p>
             <strong
               >Q3. À quelle fréquence utilisez-vous les transports à Nice
               ?</strong
             >
           </p>
-          <label
-            ><input type="radio" name="freq" value="Tous les jours" /> Tous les
-            jours</label
-          >
-          <label
-            ><input
+          <label>
+            <input
               type="radio"
-              name="freq"
+              name="entry.50849965"
+              value="Tous les jours"
+              required
+            />
+            Tous les jours
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.50849965"
               value="Plusieurs fois par semaine"
             />
-            Plusieurs fois par semaine</label
-          >
-          <label
-            ><input type="radio" name="freq" value="Occasionnellement" />
-            Occasionnellement</label
-          >
-          <label
-            ><input type="radio" name="freq" value="Très rarement" /> Très
-            rarement</label
-          >
+            Plusieurs fois par semaine
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.50849965"
+              value="Occasionnellement"
+            />
+            Occasionnellement
+          </label>
+          <label>
+            <input type="radio" name="entry.50849965" value="Très rarement" />
+            Très rarement
+          </label>
         </fieldset>
 
         <fieldset>
           <legend>Habitudes de transport</legend>
 
+          <!-- B2 → entry.495670545 -->
           <p><strong>B2. Votre déplacement principal concerne :</strong></p>
-          <label
-            ><input type="radio" name="B2" value="Les études" /> Les
-            études</label
-          >
-          <label
-            ><input type="radio" name="B2" value="Le travail" /> Le
-            travail</label
-          >
-          <label
-            ><input type="radio" name="B2" value="Les loisirs / sorties" /> Les
-            loisirs / sorties</label
-          >
+          <label>
+            <input
+              type="radio"
+              name="entry.495670545"
+              value="Les études"
+              required
+            />
+            Les études
+          </label>
+          <label>
+            <input type="radio" name="entry.495670545" value="Le travail" />
+            Le travail
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.495670545"
+              value="Les loisirs / sorties"
+            />
+            Les loisirs / sorties
+          </label>
 
+          <!-- B3 → entry.2107968104 -->
           <p><strong>B3. Vous utilisez le plus souvent :</strong></p>
-          <label
-            ><input type="radio" name="B3" value="Tramway" /> Tramway</label
-          >
-          <label><input type="radio" name="B3" value="Bus" /> Bus</label>
-          <label
-            ><input type="radio" name="B3" value="Vélo / vélo électrique" />
-            Vélo / vélo électrique</label
-          >
-          <label
-            ><input type="radio" name="B3" value="Trottinette" />
-            Trottinette</label
-          >
-          <label
-            ><input type="radio" name="B3" value="Voiture" /> Voiture</label
-          >
-          <label><input type="radio" name="B3" value="Marche" /> Marche</label>
+          <label>
+            <input
+              type="radio"
+              name="entry.2107968104"
+              value="Tramway"
+              required
+            />
+            Tramway
+          </label>
+          <label>
+            <input type="radio" name="entry.2107968104" value="Bus" />
+            Bus
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.2107968104"
+              value="Vélo / vélo électrique"
+            />
+            Vélo / vélo électrique
+          </label>
+          <label>
+            <input type="radio" name="entry.2107968104" value="Trottinette" />
+            Trottinette
+          </label>
+          <label>
+            <input type="radio" name="entry.2107968104" value="Voiture" />
+            Voiture
+          </label>
+          <label>
+            <input type="radio" name="entry.2107968104" value="Marche" />
+            Marche
+          </label>
 
+          <!-- B4 → entry.686158826 -->
           <p>
             <strong
               >B4. Le prix des transports influence-t-il fortement votre choix
               ?</strong
             >
           </p>
-          <label><input type="radio" name="B4" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B4" value="Non" /> Non</label>
+          <label>
+            <input
+              type="radio"
+              name="entry.686158826"
+              value="Souvent"
+              required
+            />
+            Souvent
+          </label>
+          <label>
+            <input type="radio" name="entry.686158826" value="Parfois" />
+            Parfois
+          </label>
+          <label>
+            <input type="radio" name="entry.686158826" value="Jamais" />
+            Jamais
+          </label>
         </fieldset>
 
         <fieldset>
           <legend>Libre-service et critères</legend>
 
+          <!-- ⚠️ B5 n'existe pas dans le Google Form → questions locales non envoyées -->
           <p>
             <strong
               >B5. Utilisez-vous les vélos ou trottinettes en libre-service à
               Nice ?</strong
             >
           </p>
-          <label
-            ><input type="radio" name="B5" value="Souvent" /> Souvent</label
-          >
-          <label
-            ><input type="radio" name="B5" value="Parfois" /> Parfois</label
-          >
-          <label><input type="radio" name="B5" value="Jamais" /> Jamais</label>
+          <label>
+            <input type="radio" name="B5" value="Souvent" />
+            Souvent
+          </label>
+          <label>
+            <input type="radio" name="B5" value="Parfois" />
+            Parfois
+          </label>
+          <label>
+            <input type="radio" name="B5" value="Jamais" />
+            Jamais
+          </label>
 
+          <!-- B6 → entry.1082254453 -->
           <p><strong>B6. Diriez-vous que ces services sont :</strong></p>
-          <label
-            ><input type="radio" name="B6" value="Abordables" />
-            Abordables</label
-          >
-          <label
-            ><input type="radio" name="B6" value="Trop chers" /> Trop
-            chers</label
-          >
-          <label
-            ><input type="radio" name="B6" value="Corrects pour le prix" />
-            Corrects pour le prix</label
-          >
-          <label
-            ><input type="radio" name="B6" value="Je ne sais pas" /> Je ne sais
-            pas</label
-          >
+          <label>
+            <input
+              type="radio"
+              name="entry.1082254453"
+              value="Abordables"
+              required
+            />
+            Abordables
+          </label>
+          <label>
+            <input type="radio" name="entry.1082254453" value="Trop chers" />
+            Trop chers
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.1082254453"
+              value="Corrects pour le prix"
+            />
+            Corrects pour le prix
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.1082254453"
+              value="Je ne sais pas"
+            />
+            Je ne sais pas
+          </label>
 
+          <!-- B7 → entry.367722289 -->
           <p>
             <strong
               >B7. Votre critère le plus important pour choisir un mode de
               transport :</strong
             >
           </p>
-          <label
-            ><input type="radio" name="B7" value="Rapidité" /> Rapidité</label
-          >
-          <label><input type="radio" name="B7" value="Prix" /> Prix</label>
-          <label
-            ><input type="radio" name="B7" value="Flexibilité" />
-            Flexibilité</label
-          >
-          <label
-            ><input type="radio" name="B7" value="Sécurité" /> Sécurité</label
-          >
-          <label
-            ><input type="radio" name="B7" value="Impact écologique" /> Impact
-            écologique</label
-          >
+          <label>
+            <input
+              type="radio"
+              name="entry.367722289"
+              value="Rapidité"
+              required
+            />
+            Rapidité
+          </label>
+          <label>
+            <input type="radio" name="entry.367722289" value="Prix" />
+            Prix
+          </label>
+          <label>
+            <input type="radio" name="entry.367722289" value="Flexibilité" />
+            Flexibilité
+          </label>
+          <label>
+            <input type="radio" name="entry.367722289" value="Sécurité" />
+            Sécurité
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.367722289"
+              value="Impact écologique"
+            />
+            Impact écologique
+          </label>
         </fieldset>
 
         <fieldset>
           <legend>Transports écologiques</legend>
 
+          <!-- B8 → entry.1571521055 -->
           <p>
             <strong
               >B8. Seriez-vous prêt(e) à utiliser un vélo électrique tous les
               jours ?</strong
             >
           </p>
-          <label><input type="radio" name="B8" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B8" value="Non" /> Non</label>
-          <label
-            ><input type="radio" name="B8" value="Peut-être" /> Peut-être</label
-          >
+          <label>
+            <input type="radio" name="entry.1571521055" value="Oui" required />
+            Oui
+          </label>
+          <label>
+            <input type="radio" name="entry.1571521055" value="Non" />
+            Non
+          </label>
+          <label>
+            <input type="radio" name="entry.1571521055" value="Peut-être" />
+            Peut-être
+          </label>
 
+          <!-- B9 → entry.9312713 (checkboxes) -->
           <p><strong>B9. Si non ou peut-être, pourquoi ?</strong></p>
-          <label
-            ><input
+          <label>
+            <input
               type="checkbox"
-              name="B9_distance"
+              name="entry.9312713"
               value="Distance trop longue"
             />
-            Distance trop longue</label
-          >
-          <label
-            ><input
+            Distance trop longue
+          </label>
+          <label>
+            <input
               type="checkbox"
-              name="B9_securite"
+              name="entry.9312713"
               value="Manque de sécurité"
             />
-            Manque de sécurité</label
-          >
-          <label
-            ><input
+            Manque de sécurité
+          </label>
+          <label>
+            <input
               type="checkbox"
-              name="B9_infra"
+              name="entry.9312713"
               value="Manque d’infrastructures"
             />
-            Manque d’infrastructures</label
-          >
-          <label
-            ><input type="checkbox" name="B9_fatigue" value="Fatigue / santé" />
-            Fatigue / santé</label
-          >
+            Manque d’infrastructures
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="entry.9312713"
+              value="Fatigue / santé"
+            />
+            Fatigue / santé
+          </label>
 
+          <!-- B10 → entry.680704216 -->
           <p>
             <strong
               >B10. Utilisez-vous des transports le soir ou la nuit (sorties)
               ?</strong
             >
           </p>
-          <label><input type="radio" name="B10" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B10" value="Non" /> Non</label>
+          <label>
+            <input type="radio" name="entry.680704216" value="Oui" required />
+            Oui
+          </label>
+          <label>
+            <input type="radio" name="entry.680704216" value="Non" />
+            Non
+          </label>
 
+          <!-- B11 → entry.750787617 -->
           <p>
             <strong
               >B11. Pour les sorties, le transport non polluant le plus adapté
               vous semble :</strong
             >
           </p>
-          <label
-            ><input type="radio" name="B11" value="Tramway" /> Tramway</label
-          >
-          <label
-            ><input type="radio" name="B11" value="Bus de nuit" /> Bus de
-            nuit</label
-          >
-          <label
-            ><input type="radio" name="B11" value="Covoiturage électrique" />
-            Covoiturage électrique</label
-          >
-          <label
-            ><input type="radio" name="B11" value="Trottinette / vélo" />
-            Trottinette / vélo</label
-          >
+          <label>
+            <input
+              type="radio"
+              name="entry.750787617"
+              value="Tramway"
+              required
+            />
+            Tramway
+          </label>
+          <label>
+            <input type="radio" name="entry.750787617" value="Bus de nuit" />
+            Bus de nuit
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.750787617"
+              value="Covoiturage électrique"
+            />
+            Covoiturage électrique
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.750787617"
+              value="Trottinette / vélo"
+            />
+            Trottinette / vélo
+          </label>
         </fieldset>
 
         <fieldset>
           <legend>Perception de Nice</legend>
 
+          <!-- B12 → entry.863439430 -->
           <p>
             <strong
               >B12. Souhaiteriez-vous plus de transports en commun non polluants
               la nuit ?</strong
             >
           </p>
-          <label><input type="radio" name="B12" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B12" value="Non" /> Non</label>
-          <label
-            ><input type="radio" name="B12" value="Sans avis" /> Sans
-            avis</label
-          >
+          <label>
+            <input type="radio" name="entry.863439430" value="Oui" required />
+            Oui
+          </label>
+          <label>
+            <input type="radio" name="entry.863439430" value="Non" />
+            Non
+          </label>
+          <label>
+            <input type="radio" name="entry.863439430" value="Sans avis" />
+            Sans avis
+          </label>
 
+          <!-- B13 → entry.1314474752 -->
           <p>
             <strong
               >B13. Seriez-vous intéressé(e) par un abonnement “mobilité
               écologique jeune” ?</strong
             >
           </p>
-          <label><input type="radio" name="B13" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B13" value="Non" /> Non</label>
+          <label>
+            <input type="radio" name="entry.1314474752" value="Oui" required />
+            Oui
+          </label>
+          <label>
+            <input type="radio" name="entry.1314474752" value="Non" />
+            Non
+          </label>
 
+          <!-- B14 → entry.745316770 -->
           <p><strong>B14. À votre avis, Nice est une ville :</strong></p>
-          <label
-            ><input
+          <label>
+            <input
               type="radio"
-              name="B14"
-              value="Favorable aux transports non polluants"
+              name="entry.745316770"
+              value="Très favorable aux transports non polluants"
+              required
             />
-            Favorable aux transports non polluants</label
-          >
-          <label
-            ><input type="radio" name="B14" value="Moyennement favorable" />
-            Moyennement favorable</label
-          >
-          <label
-            ><input type="radio" name="B14" value="Peu favorable" /> Peu
-            favorable</label
-          >
+            Très favorable aux transports non polluants
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.745316770"
+              value="Moyennement favorable"
+            />
+            Moyennement favorable
+          </label>
+          <label>
+            <input type="radio" name="entry.745316770" value="Peu favorable" />
+            Peu favorable
+          </label>
 
+          <!-- B15 → entry.682645805 -->
           <p>
             <strong
               >B15. Que manque-t-il le plus pour encourager les jeunes à
               utiliser des transports non polluants ?</strong
             >
           </p>
-          <label
-            ><input type="radio" name="B15" value="Prix plus bas" /> Prix plus
-            bas</label
-          >
-          <label
-            ><input type="radio" name="B15" value="Plus d’infrastructures" />
-            Plus d’infrastructures</label
-          >
-          <label
-            ><input type="radio" name="B15" value="Plus de sécurité" /> Plus de
-            sécurité</label
-          >
-          <label
-            ><input type="radio" name="B15" value="Meilleure communication" />
-            Meilleure communication</label
-          >
+          <label>
+            <input
+              type="radio"
+              name="entry.682645805"
+              value="Prix plus bas"
+              required
+            />
+            Prix plus bas
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.682645805"
+              value="Plus d’infrastructures"
+            />
+            Plus d’infrastructures
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.682645805"
+              value="Plus de sécurité"
+            />
+            Plus de sécurité
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.682645805"
+              value="Meilleure communication"
+            />
+            Meilleure communication
+          </label>
 
+          <!-- B16 → entry.1137786741 -->
           <p>
             <strong
               >B16. Seriez-vous prêt(e) à laisser la voiture si les transports
               non polluants étaient plus attractifs ?</strong
             >
           </p>
-          <label><input type="radio" name="B16" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B16" value="Non" /> Non</label>
-          <label
-            ><input type="radio" name="B16" value="Peut-être" />
-            Peut-être</label
-          >
+          <label>
+            <input type="radio" name="entry.1137786741" value="Oui" required />
+            Oui
+          </label>
+          <label>
+            <input type="radio" name="entry.1137786741" value="Non" />
+            Non
+          </label>
+          <label>
+            <input type="radio" name="entry.1137786741" value="Peut-être" />
+            Peut-être
+          </label>
 
+          <!-- B17 → entry.1253797089 -->
           <p>
             <strong
               >B17. Recommanderiez-vous Nice à d’autres jeunes pour sa mobilité
               écologique ?</strong
             >
           </p>
-          <label><input type="radio" name="B17" value="Oui" /> Oui</label>
-          <label><input type="radio" name="B17" value="Non" /> Non</label>
-          <label
-            ><input type="radio" name="B17" value="Peut-être" />
-            Peut-être</label
-          >
+          <label>
+            <input type="radio" name="entry.1253797089" value="Oui" required />
+            Oui
+          </label>
+          <label>
+            <input type="radio" name="entry.1253797089" value="Non" />
+            Non
+          </label>
+          <label>
+            <input type="radio" name="entry.1253797089" value="Peut-être" />
+            Peut-être
+          </label>
 
+          <!-- B18 → entry.597773845 -->
           <p>
             <strong
               >B18. Selon vous, la priorité de la ville devrait être :</strong
             >
           </p>
-          <label
-            ><input
+          <label>
+            <input
               type="radio"
-              name="B18"
+              name="entry.597773845"
               value="Vélos / trottinettes en libre-service"
+              required
             />
-            Vélos / trottinettes en libre-service</label
-          >
-          <label
-            ><input
+            Vélos / trottinettes en libre-service
+          </label>
+          <label>
+            <input
               type="radio"
-              name="B18"
+              name="entry.597773845"
               value="Tramway et bus électriques"
             />
-            Tramway et bus électriques</label
-          >
-          <label
-            ><input type="radio" name="B18" value="Pistes cyclables" /> Pistes
-            cyclables</label
-          >
-          <label
-            ><input type="radio" name="B18" value="Covoiturage électrique" />
-            Covoiturage électrique</label
-          >
+            Tramway et bus électriques
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.597773845"
+              value="Pistes cyclables"
+            />
+            Pistes cyclables
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="entry.597773845"
+              value="Covoiturage électrique"
+            />
+            Covoiturage électrique
+          </label>
         </fieldset>
 
         <p class="info-note">
-          Ce formulaire illustre la structure du questionnaire 18–25 ans. Pour
-          enregistrer les réponses dans Google Forms, il faut utiliser les
-          identifiants <code>entry.xxxxx</code> du formulaire correspondant.
+          Ce questionnaire est affiché en HTML pour le projet S106. Les réponses
+          sont envoyées vers un Google Form 18–25 ans pour analyse statistique.
         </p>
 
-        <p><input type="submit" value="Envoyer (test)" /></p>
+        <p>
+          <input type="submit" value="Envoyer mes réponses" />
+        </p>
       </form>
     </main>
 
     <footer>
-      <p>&copy; 2024 Nice Green Mobility</p>
+      <p>Projet S106 - Questionnaire 18–25 ans</p>
     </footer>
   </body>
 </html>
