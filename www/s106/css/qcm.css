@@ -1,4 +1,4 @@
-/* QCM-specific styles */
+
 :root {
   --qcm-bg: #ffffff;
   --qcm-accent: #2b7a78;
@@ -6,7 +6,6 @@
   --qcm-text: #222;
 }
 
-/* Layout */
 body {
   background: var(--qcm-bg);
   color: var(--qcm-text);
@@ -98,7 +97,6 @@ input[type="checkbox"] {
   width: 0%;
 }
 
-/* Age links inside questionnaire index */
 .age-links ul {
   list-style: none;
   padding: 0;
@@ -117,7 +115,7 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 
-/* Responsive */
+
 @media (max-width: 640px) {
   .questionnaire {
     padding: 0.75rem;
@@ -132,7 +130,7 @@ input[type="checkbox"] {
   }
 }
 
-/* Print adjustments for QCM: clean and compact */
+
 @media print {
   .questionnaire {
     box-shadow: none;
