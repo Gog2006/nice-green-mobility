@@ -29,450 +29,179 @@
         method="POST"
         target="_blank"
       >
-        <input type="hidden" name="fvv" value="1" />
-        <input type="hidden" name="pageHistory" value="0" />
-        <input type="hidden" name="fbzx" value="-5486798067566908080" />
-
         <fieldset>
           <legend>Profil et utilisation</legend>
 
           <!-- Q1 -->
           <p><strong>Q1. Vous êtes :</strong></p>
-          <label>
-            <input
-              type="radio"
-              name="entry.726901768"
-              value="Habitant(e) de Nice"
-              required
-            />
-            Habitant(e) de Nice
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.726901768"
-              value="Touriste français"
-            />
-            Touriste français
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.726901768"
-              value="Touriste étranger"
-            />
-            Touriste étranger
-          </label>
+          <label><input type="radio" name="entry.726901768" value="Habitant(e) de Nice" required /> Habitant(e) de Nice</label>
+          <label><input type="radio" name="entry.726901768" value="Touriste français" /> Touriste français</label>
+          <label><input type="radio" name="entry.726901768" value="Touriste étranger" /> Touriste étranger</label>
 
           <!-- Q2 -->
-          <p>
-            <strong
-              >Q2. Utilisez-vous les transports en commun à Nice (bus, tram)
-              ?</strong
-            >
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.1118904923"
-              value="Oui, régulièrement"
-              required
-            />
-            Oui, régulièrement
-          </label>
-          <label>
-            <input type="radio" name="entry.1118904923" value="Parfois" />
-            Parfois
-          </label>
-          <label>
-            <input type="radio" name="entry.1118904923" value="Rarement" />
-            Rarement
-          </label>
-          <label>
-            <input type="radio" name="entry.1118904923" value="Jamais" />
-            Jamais
-          </label>
+          <p><strong>Q2. Utilisez-vous les transports en commun à Nice ?</strong></p>
+          <label><input type="radio" name="entry.1118904923" value="Oui, régulièrement" required /> Oui, régulièrement</label>
+          <label><input type="radio" name="entry.1118904923" value="Parfois" /> Parfois</label>
+          <label><input type="radio" name="entry.1118904923" value="Rarement" /> Rarement</label>
+          <label><input type="radio" name="entry.1118904923" value="Jamais" /> Jamais</label>
         </fieldset>
 
         <fieldset>
           <legend>Freins et accessibilité</legend>
 
-          <!-- Q3 (cases à cocher) -->
-          <p>
-            <strong
-              >Q3. Si vous utilisez peu ou jamais les transports, pourquoi
-              ?</strong
-            >
-          </p>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.357364254"
-              value="Difficultés de marche / mobilité"
-            />
-            Difficultés de marche / mobilité
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.357364254"
-              value="Horaires inadaptés"
-            />
-            Horaires inadaptés
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.357364254"
-              value="Sentiment d’insécurité"
-            />
-            Sentiment d’insécurité
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.357364254"
-              value="Préférence pour la voiture / taxi"
-            />
-            Préférence pour la voiture / taxi
-          </label>
+     <!-- Q3 → entry.357364254 (CHOIX UNIQUE = RADIO) -->
+<p>
+  <strong>Q3. Si vous utilisez peu ou jamais les transports, pourquoi ?</strong>
+</p>
+
+<label>
+  <input
+    type="radio"
+    name="entry.357364254"
+    value="Difficultés de marche / mobilité"
+    required
+  />
+  Difficultés de marche / mobilité
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="entry.357364254"
+    value="Horaires inadaptés"
+  />
+  Horaires inadaptés
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="entry.357364254"
+    value="Sentiment d’insécurité"
+  />
+  Sentiment d’insécurité
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="entry.357364254"
+    value="Préférence pour la voiture / taxi"
+  />
+  Préférence pour la voiture / taxi
+</label>
 
           <!-- Q4 -->
-          <p>
-            <strong>Q4. Votre priorité dans un transport est surtout :</strong>
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.662636022"
-              value="Accessibilité"
-              required
-            />
-            Accessibilité
-          </label>
-          <label>
-            <input type="radio" name="entry.662636022" value="Confort" />
-            Confort
-          </label>
-          <label>
-            <input type="radio" name="entry.662636022" value="Sécurité" />
-            Sécurité
-          </label>
+          <p><strong>Q4. Votre priorité dans un transport est surtout :</strong></p>
+          <label><input type="radio" name="entry.662636022" value="Accessibilité" required /> Accessibilité</label>
+          <label><input type="radio" name="entry.662636022" value="Confort" /> Confort</label>
+          <label><input type="radio" name="entry.662636022" value="Sécurité" /> Sécurité</label>
 
           <!-- Q5 -->
-          <p>
-            <strong
-              >Q5. Trouvez-vous que les arrêts de tram et bus sont facilement
-              accessibles pour vous ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.1631046165" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.1631046165" value="Non" />
-            Non
-          </label>
-          <label>
-            <input type="radio" name="entry.1631046165" value="Parfois" />
-            Parfois
-          </label>
+          <p><strong>Q5. Les arrêts de tram et bus sont-ils accessibles pour vous ?</strong></p>
+          <label><input type="radio" name="entry.1631046165" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.1631046165" value="Non" /> Non</label>
+          <label><input type="radio" name="entry.1631046165" value="Parfois" /> Parfois</label>
         </fieldset>
 
         <fieldset>
           <legend>Environnement piéton</legend>
 
           <!-- Q6 -->
-          <p>
-            <strong
-              >Q6. Les trottoirs et cheminements piétons de votre quartier sont
-              :</strong
-            >
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.172883922"
-              value="Confortables et sûrs"
-              required
-            />
-            Confortables et sûrs
-          </label>
-          <label>
-            <input type="radio" name="entry.172883922" value="Corrects" />
-            Corrects
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.172883922"
-              value="Difficiles (étroits, abîmés, obstacles)"
-            />
-            Difficiles (étroits, abîmés, obstacles)
-          </label>
+          <p><strong>Q6. Les trottoirs de votre quartier sont :</strong></p>
+          <label><input type="radio" name="entry.172883922" value="Confortables et sûrs" required /> Confortables et sûrs</label>
+          <label><input type="radio" name="entry.172883922" value="Corrects" /> Corrects</label>
+          <label><input type="radio" name="entry.172883922" value="Difficiles (étroits, abîmés, obstacles)" /> Difficiles</label>
         </fieldset>
 
         <fieldset>
           <legend>Transports non polluants adaptés</legend>
 
           <!-- Q7 -->
-          <p>
-            <strong
-              >Q7. Seriez-vous favorable à davantage de navettes électriques de
-              quartier ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.770076053" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.770076053" value="Non" />
-            Non
-          </label>
-          <label>
-            <input type="radio" name="entry.770076053" value="Sans avis" />
-            Sans avis
-          </label>
+          <p><strong>Q7. Seriez-vous favorable à des navettes électriques de quartier ?</strong></p>
+          <label><input type="radio" name="entry.770076053" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.770076053" value="Non" /> Non</label>
+          <label><input type="radio" name="entry.770076053" value="Sans avis" /> Sans avis</label>
 
           <!-- Q8 -->
-          <p>
-            <strong
-              >Q8. La distance entre votre domicile et l’arrêt de transport le
-              plus proche est :</strong
-            >
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.1835351540"
-              value="Moins de 200 m"
-              required
-            />
-            Moins de 200 m
-          </label>
-          <label>
-            <input type="radio" name="entry.1835351540" value="200–500 m" />
-            200–500 m
-          </label>
-          <label>
-            <input type="radio" name="entry.1835351540" value="Plus de 500 m" />
-            Plus de 500 m
-          </label>
+          <p><strong>Q8. Distance jusqu’à l’arrêt le plus proche :</strong></p>
+          <label><input type="radio" name="entry.1835351540" value="Moins de 200 m" required /> Moins de 200 m</label>
+          <label><input type="radio" name="entry.1835351540" value="200–500 m" /> 200–500 m</label>
+          <label><input type="radio" name="entry.1835351540" value="Plus de 500 m" /> Plus de 500 m</label>
 
           <!-- Q9 -->
-          <p>
-            <strong
-              >Q9. Les informations sur les transports (plans, horaires) vous
-              semblent :</strong
-            >
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.2142083012"
-              value="Claires"
-              required
-            />
-            Claires
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.2142083012"
-              value="Moyennement claires"
-            />
-            Moyennement claires
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.2142083012"
-              value="Difficiles à comprendre"
-            />
-            Difficiles à comprendre
-          </label>
+          <p><strong>Q9. Les informations sur les transports sont :</strong></p>
+          <label><input type="radio" name="entry.2142083012" value="Claires" required /> Claires</label>
+          <label><input type="radio" name="entry.2142083012" value="Moyennement claires" /> Moyennement claires</label>
+          <label><input type="radio" name="entry.2142083012" value="Difficiles à comprendre" /> Difficiles à comprendre</label>
         </fieldset>
 
         <fieldset>
           <legend>Qualité de vie et écologie</legend>
 
           <!-- Q10 -->
-          <p>
-            <strong
-              >Q10. Pensez-vous que le développement de transports non polluants
-              est important pour votre qualité de vie ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.1887805416" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.1887805416" value="Non" />
-            Non
-          </label>
-          <label>
-            <input type="radio" name="entry.1887805416" value="Sans avis" />
-            Sans avis
-          </label>
+          <p><strong>Q10. Les transports non polluants sont-ils importants pour votre qualité de vie ?</strong></p>
+          <label><input type="radio" name="entry.1887805416" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.1887805416" value="Non" /> Non</label>
+          <label><input type="radio" name="entry.1887805416" value="Sans avis" /> Sans avis</label>
 
           <!-- Q11 -->
-          <p>
-            <strong
-              >Q11. Utiliseriez-vous un service de transport écologique adapté
-              aux personnes à mobilité réduite ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.653519966" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.653519966" value="Non" />
-            Non
-          </label>
-          <label>
-            <input type="radio" name="entry.653519966" value="Peut-être" />
-            Peut-être
-          </label>
+          <p><strong>Q11. Utiliseriez-vous un service adapté aux personnes à mobilité réduite ?</strong></p>
+          <label><input type="radio" name="entry.653519966" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.653519966" value="Non" /> Non</label>
+          <label><input type="radio" name="entry.653519966" value="Peut-être" /> Peut-être</label>
 
           <!-- Q12 -->
-          <p>
-            <strong
-              >Q12. Quel type de transport non polluant vous convient le mieux
-              ?</strong
-            >
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.435975184"
-              value="Tramway"
-              required
-            />
-            Tramway
-          </label>
-          <label>
-            <input type="radio" name="entry.435975184" value="Bus" />
-            Bus
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.435975184"
-              value="Navette de quartier"
-            />
-            Navette de quartier
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.435975184"
-              value="Marche (si sécurisée)"
-            />
-            Marche (si sécurisée)
-          </label>
+          <p><strong>Q12. Quel transport non polluant vous convient le mieux ?</strong></p>
+          <label><input type="radio" name="entry.435975184" value="Tramway" required /> Tramway</label>
+          <label><input type="radio" name="entry.435975184" value="Bus" /> Bus</label>
+          <label><input type="radio" name="entry.435975184" value="Navette de quartier" /> Navette de quartier</label>
+          <label><input type="radio" name="entry.435975184" value="Marche (si sécurisée)" /> Marche</label>
         </fieldset>
 
         <fieldset>
           <legend>Perception globale</legend>
 
           <!-- Q13 -->
-          <p>
-            <strong
-              >Q13. Seriez-vous favorable à une réduction spéciale pour les
-              seniors sur les transports non polluants ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.1163029034" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.1163029034" value="Non" />
-            Non
-          </label>
+          <p><strong>Q13. Favorable à une réduction senior ?</strong></p>
+          <label><input type="radio" name="entry.1163029034" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.1163029034" value="Non" /> Non</label>
 
           <!-- Q14 -->
-          <p>
-            <strong
-              >Q14. Le bruit de la circulation (voitures, scooters) vous
-              gêne-t-il ?</strong
-            >
-          </p>
-          <label>
-            <input
-              type="radio"
-              name="entry.1998440095"
-              value="Beaucoup"
-              required
-            />
-            Beaucoup
-          </label>
-          <label>
-            <input type="radio" name="entry.1998440095" value="Un peu" />
-            Un peu
-          </label>
-          <label>
-            <input type="radio" name="entry.1998440095" value="Pas vraiment" />
-            Pas vraiment
-          </label>
+          <p><strong>Q14. Le bruit de la circulation vous gêne-t-il ?</strong></p>
+          <label><input type="radio" name="entry.1998440095" value="Beaucoup" required /> Beaucoup</label>
+          <label><input type="radio" name="entry.1998440095" value="Un peu" /> Un peu</label>
+          <label><input type="radio" name="entry.1998440095" value="Pas vraiment" /> Pas vraiment</label>
 
           <!-- Q15 -->
-          <p>
-            <strong
-              >Q15. Seriez-vous favorable à plus de zones piétonnes calmes et
-              non polluées dans Nice ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.1682791717" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.1682791717" value="Non" />
-            Non
-          </label>
-          <label>
-            <input type="radio" name="entry.1682791717" value="Sans avis" />
-            Sans avis
-          </label>
+          <p><strong>Q15. Plus de zones piétonnes calmes à Nice ?</strong></p>
+          <label><input type="radio" name="entry.1682791717" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.1682791717" value="Non" /> Non</label>
+          <label><input type="radio" name="entry.1682791717" value="Sans avis" /> Sans avis</label>
 
           <!-- Q16 -->
-          <p>
-            <strong
-              >Q16. Diriez-vous que Nice prend suffisamment en compte les
-              besoins des seniors dans l’organisation des transports ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.1245707746" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.1245707746" value="Non" />
-            Non
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="entry.1245707746"
-              value="Je ne sais pas"
-            />
-            Je ne sais pas
-          </label>
+          <p><strong>Q16. Nice prend-elle en compte les besoins des seniors ?</strong></p>
+          <label><input type="radio" name="entry.1245707746" value="Oui" required /> Oui</label>
+          <label><input type="radio" name="entry.1245707746" value="Non" /> Non</label>
+          <label><input type="radio" name="entry.1245707746" value="Je ne sais pas" /> Je ne sais pas</label>
         </fieldset>
 
-        <p>
-          <input type="submit" value="Envoyer mes réponses" />
-        </p>
+        <p><input type="submit" value="Envoyer mes réponses" /></p>
       </form>
     </main>
 
     <footer>
       <p>Projet S106 - Questionnaire +65 ans</p>
     </footer>
+
+    <!-- Validation JS : au moins une checkbox cochée pour Q3 -->
+    <script>
+      document.querySelector("form.questionnaire").addEventListener("submit", function (e) {
+        if (!document.querySelector('input[name="entry.357364254"]:checked')) {
+          e.preventDefault();
+          alert("Merci de cocher au moins une réponse à la question Q3.");
+        }
+      });
+    </script>
   </body>
 </html>

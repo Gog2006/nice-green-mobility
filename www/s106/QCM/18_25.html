@@ -25,10 +25,20 @@
       <!-- FORMULAIRE RELIÉ AU GOOGLE FORM 18–25 ans -->
       <form
         class="questionnaire"
-        action="https://docs.google.com/forms/d/12LPIk7dAPQ_DTfArxOj5sxhCFr8SUSUTgtdMFwjJpc8/formResponse"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSecco4dPvvjOkTTbPCGRusqdg7Ofnl7NVHZnx890CZQ1Zbfmg/formResponse"
         method="POST"
         target="_blank"
       >
+        <!-- Champs cachés nécessaires (issus du contrôle Google Form) -->
+        <input type="hidden" name="fvv" value="1" />
+        <input
+          type="hidden"
+          name="partialResponse"
+          value='[null,null,"270295293904842384"]'
+        />
+        <input type="hidden" name="pageHistory" value="0" />
+        <input type="hidden" name="fbzx" value="270295293904842384" />
+        <input type="hidden" name="submissionTimestamp" value="-1" />
 
         <fieldset>
           <legend>Profil</legend>
@@ -61,7 +71,7 @@
             Touriste étranger
           </label>
 
-          <!-- Q2 → entry.5977616 -->
+          <!-- Q2 → entry.5977616 (⚠️ "Autre" supprimé car non présent dans le Google Form) -->
           <p><strong>Q2. Votre situation principale :</strong></p>
           <label>
             <input
@@ -79,10 +89,6 @@
           <label>
             <input type="radio" name="entry.5977616" value="Alternant(e)" />
             Alternant(e)
-          </label>
-          <label>
-            <input type="radio" name="entry.5977616" value="Autre" />
-            Autre
           </label>
 
           <!-- Q3 → entry.50849965 -->
@@ -215,7 +221,7 @@
         <fieldset>
           <legend>Libre-service et critères</legend>
 
-          <!--  B5 n'existe pas dans le Google Form → questions locales non envoyées -->
+          <!-- B5 : n'existe pas dans le Google Form -> ne sera PAS envoyé (name != entry.xxxxx) -->
           <p>
             <strong
               >B5. Utilisez-vous les vélos ou trottinettes en libre-service à
@@ -328,40 +334,46 @@
             Peut-être
           </label>
 
-          <!-- B9 → entry.9312713 (checkboxes) -->
-          <p><strong>B9. Si non ou peut-être, pourquoi ?</strong></p>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.9312713"
-              value="Distance trop longue"
-            />
-            Distance trop longue
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.9312713"
-              value="Manque de sécurité"
-            />
-            Manque de sécurité
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.9312713"
-              value="Manque d’infrastructures"
-            />
-            Manque d’infrastructures
-          </label>
-          <label>
-            <input
-              type="checkbox"
-              name="entry.9312713"
-              value="Fatigue / santé"
-            />
-            Fatigue / santé
-          </label>
+         
+         <!-- B9 → entry.9312713 (⚠️ dans le Google Form c'est un choix UNIQUE = radio) -->
+<p><strong>B9. Si non ou peut-être, pourquoi ?</strong></p>
+
+<label>
+  <input
+    type="radio"
+    name="entry.9312713"
+    value="Distance trop longue"
+  />
+  Distance trop longue
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="entry.9312713"
+    value="Manque de sécurité"
+  />
+  Manque de sécurité
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="entry.9312713"
+    value="Manque d’infrastructures"
+  />
+  Manque d’infrastructures
+</label>
+
+<label>
+  <input
+    type="radio"
+    name="entry.9312713"
+    value="Fatigue / santé"
+  />
+  Fatigue / santé
+</label>
+
 
           <!-- B10 → entry.680704216 -->
           <p>
@@ -421,24 +433,21 @@
           <legend>Perception de Nice</legend>
 
           <!-- B12 → entry.863439430 -->
-          <p>
-            <strong
-              >B12. Souhaiteriez-vous plus de transports en commun non polluants
-              la nuit ?</strong
-            >
-          </p>
-          <label>
-            <input type="radio" name="entry.863439430" value="Oui" required />
-            Oui
-          </label>
-          <label>
-            <input type="radio" name="entry.863439430" value="Non" />
-            Non
-          </label>
-          <label>
-            <input type="radio" name="entry.863439430" value="Sans avis" />
-            Sans avis
-          </label>
+           <!-- B12 → entry.863439430 (Google Form = Oui / Non uniquement) -->
+<p>
+  <strong>B12. Souhaiteriez-vous plus de transports en commun non polluants la nuit ?</strong>
+</p>
+
+<label>
+  <input type="radio" name="entry.863439430" value="Oui" required />
+  Oui
+</label>
+
+<label>
+  <input type="radio" name="entry.863439430" value="Non" />
+  Non
+</label>
+
 
           <!-- B13 → entry.1314474752 -->
           <p>
