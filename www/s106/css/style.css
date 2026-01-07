@@ -10,6 +10,17 @@ main {
   background-color: #e8f5e9;
 }
 
+.main-exception {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1030px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a4d2e;
+  background-color: #e8f5e9;
+}
 /* Nav */
 nav {
   position: sticky;
@@ -327,6 +338,7 @@ a {
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(46, 125, 50, 0.12);
 }
+
 .section-card h2 {
   margin-top: 0;
   color: var(--color);
@@ -362,7 +374,6 @@ a {
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(46, 125, 50, 0.12);
 }
-
 
 @media (max-width: 900px) {
   .section-card {
@@ -618,4 +629,3 @@ a {
     page-break-before: always !important;
   }
 }
-
