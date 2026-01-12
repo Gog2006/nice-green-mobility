@@ -1,12 +1,14 @@
 # nice-green-mobility
 
-Étude et site web sur les transports non polluants à Nice. Ce dépôt contient le site finalisé dans le dossier `www/s106` ainsi que les pages du questionnaire et des analyses.
+Étude et site web sur les transports non polluants à Nice.
+
+Ce dépôt contient le site web finalisé dans `www/s106/` (pages publiques, questionnaires et ressources CSS/images).
 
 ## Table des matières
 
 - Description
 - Contenu du dépôt
-- Démarrage rapide
+- Aperçu local
 - Déploiement
 - Validation
 - Où modifier le site
@@ -17,40 +19,49 @@
 
 Le site présente :
 
-- un questionnaire destiné aux habitants et aux touristes ;
-- la méthodologie d'enquête et la justification de la taille d'échantillon ;
-- une analyse des besoins et des propositions de solutions de mobilité durable ;
-- une estimation sommaire des coûts pour les solutions proposées.
+- un questionnaire (différentes tranches d'âge) ;
+- la méthodologie d'enquête et les pages de résultats ;
+- des fiches descriptives des acteurs (sociétés, opérateurs) ;
+- les styles et ressources pour le rendu public.
 
 ## Contenu du dépôt
 
-- `www/s106/` : site web à déposer sur le serveur (page d'accueil : `www/s106/index.html`).
-- `www/s106/css/` : feuilles de style.
-- `www/s106/QCM/` : questionnaire et pages liées.
-- `www/s106/pages-societes/` : pages descriptives des acteurs.
-- `auteurs.txt` : fichier obligatoire indiquant le nom du groupe (1ère ligne) puis chaque membre sur une ligne.
-- `www/s106/methodologie.html` : page décrivant la méthodologie d'enquête (taille d'échantillon, échantillonnage, collecte via Google Forms).
+- `www/s106/` : site web à copier sur le serveur (page d'accueil : `www/s106/index.html`).
+- `www/s106/css/` : feuilles de style (globales et QCM).
+- `www/s106/QCM/` : questionnaires HTML et pages de résultats.
+- `www/s106/pages-societes/` : pages descriptives des sociétés étudiées.
+- `auteurs.txt` : nom du groupe (1ère ligne) puis chaque membre sur une ligne.
+- `LICENSE` : licence du projet.
 
-## Démarrage rapide
+## Aperçu local (rapide)
 
-1. Ouvrir `www/s106/index.html` dans un navigateur moderne (Chrome, Firefox, Edge).
-2. Parcourir les pages via le menu (Sociétés, Questionnaire).
-3. Pour tester l'impression : Fichier → Imprimer → Enregistrer en PDF.
+Si vous voulez prévisualiser le site localement, ouvrez un terminal dans le dossier `www/s106` et lancez un serveur HTTP simple :
+
+```bash
+# depuis la racine du dépôt
+cd www/s106
+# servir sur http://localhost:8000
+python3 -m http.server 8000
+```
+
+Ensuite ouvrez `http://localhost:8000/index.html` dans votre navigateur.
 
 ## Déploiement
 
-Transférez le dossier `www/s106` sur le serveur de rendu via FTP/SFTP (FileZilla). Le dossier distant doit s'appeler `s106` conformément aux consignes du cours.
+Copiez le dossier `www/s106` sur le serveur de production (FTP/SFTP). Le dossier distant doit idéalement s'appeler `s106` si le serveur attend ce nom.
 
 ## Validation
 
-- Valider le HTML (https://validator.w3.org/) et le CSS (https://jigsaw.w3.org/css-validator/).
-- Vérifier que toutes les images ont un attribut `alt`.
-- Vérifier le rendu à l'impression (PDF) et s'assurer que les éléments décoratifs n'apparaissent pas sur les pages imprimées.
+- Validez le HTML avec https://validator.w3.org/.
+- Validez le CSS avec https://jigsaw.w3.org/css-validator/.
+- Vérifiez que toutes les images ont un attribut `alt`.
+- Testez l'impression (export PDF) pour vous assurer que la feuille de style d'impression masque les éléments décoratifs.
 
 ## Où modifier le site
 
-- Contenu : `www/s106/index.html`, `www/s106/pages-societes/`, `www/s106/QCM/`.
+- Contenu HTML : `www/s106/index.html`, `www/s106/pages-societes/`, `www/s106/QCM/`.
 - Styles : `www/s106/css/style.css` et `www/s106/css/qcm.css`.
+- Images : `www/s106/css/img/` et `www/s106/QCM/resultat qcm/img/`.
 
 ## Auteurs
 
@@ -58,8 +69,4 @@ La liste des membres du groupe se trouve dans `auteurs.txt` à la racine du dép
 
 ## Licence
 
-Consultez le fichier `LICENSE` pour les informations de licence.
-
-```
-
-```
+Voir le fichier `LICENSE` à la racine du dépôt pour les informations de licence.

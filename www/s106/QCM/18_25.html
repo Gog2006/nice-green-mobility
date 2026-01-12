@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--
+  Fichier: /www/s106/QCM/18_25.html
+  Description: Questionnaire pour la tranche d'âge 18–25 ans.
+-->
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -23,6 +27,7 @@
 
     <main>
       <!-- FORMULAIRE RELIÉ AU GOOGLE FORM 18–25 ans -->
+      <!-- Formulaire HTML : envoi des réponses vers un Google Form (champs = entry.<id>) -->
       <form
         class="questionnaire"
         action="https://docs.google.com/forms/d/e/1FAIpQLSecco4dPvvjOkTTbPCGRusqdg7Ofnl7NVHZnx890CZQ1Zbfmg/formResponse"
@@ -334,46 +339,40 @@
             Peut-être
           </label>
 
-         
-         <!-- B9 → entry.9312713 (⚠️ dans le Google Form c'est un choix UNIQUE = radio) -->
-<p><strong>B9. Si non ou peut-être, pourquoi ?</strong></p>
+          <!-- B9 → entry.9312713 (⚠️ dans le Google Form c'est un choix UNIQUE = radio) -->
+          <p><strong>B9. Si non ou peut-être, pourquoi ?</strong></p>
 
-<label>
-  <input
-    type="radio"
-    name="entry.9312713"
-    value="Distance trop longue"
-  />
-  Distance trop longue
-</label>
+          <label>
+            <input
+              type="radio"
+              name="entry.9312713"
+              value="Distance trop longue"
+            />
+            Distance trop longue
+          </label>
 
-<label>
-  <input
-    type="radio"
-    name="entry.9312713"
-    value="Manque de sécurité"
-  />
-  Manque de sécurité
-</label>
+          <label>
+            <input
+              type="radio"
+              name="entry.9312713"
+              value="Manque de sécurité"
+            />
+            Manque de sécurité
+          </label>
 
-<label>
-  <input
-    type="radio"
-    name="entry.9312713"
-    value="Manque d’infrastructures"
-  />
-  Manque d’infrastructures
-</label>
+          <label>
+            <input
+              type="radio"
+              name="entry.9312713"
+              value="Manque d’infrastructures"
+            />
+            Manque d’infrastructures
+          </label>
 
-<label>
-  <input
-    type="radio"
-    name="entry.9312713"
-    value="Fatigue / santé"
-  />
-  Fatigue / santé
-</label>
-
+          <label>
+            <input type="radio" name="entry.9312713" value="Fatigue / santé" />
+            Fatigue / santé
+          </label>
 
           <!-- B10 → entry.680704216 -->
           <p>
@@ -433,21 +432,23 @@
           <legend>Perception de Nice</legend>
 
           <!-- B12 → entry.863439430 -->
-           <!-- B12 → entry.863439430 (Google Form = Oui / Non uniquement) -->
-<p>
-  <strong>B12. Souhaiteriez-vous plus de transports en commun non polluants la nuit ?</strong>
-</p>
+          <!-- B12 → entry.863439430 (Google Form = Oui / Non uniquement) -->
+          <p>
+            <strong
+              >B12. Souhaiteriez-vous plus de transports en commun non polluants
+              la nuit ?</strong
+            >
+          </p>
 
-<label>
-  <input type="radio" name="entry.863439430" value="Oui" required />
-  Oui
-</label>
+          <label>
+            <input type="radio" name="entry.863439430" value="Oui" required />
+            Oui
+          </label>
 
-<label>
-  <input type="radio" name="entry.863439430" value="Non" />
-  Non
-</label>
-
+          <label>
+            <input type="radio" name="entry.863439430" value="Non" />
+            Non
+          </label>
 
           <!-- B13 → entry.1314474752 -->
           <p>

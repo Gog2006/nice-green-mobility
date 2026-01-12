@@ -1,3 +1,7 @@
+/*
+  Fichier: /www/s106/css/qcm.css
+  Description: Styles generaux pour le site Nice Green Mobility.
+*/
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -8,6 +12,7 @@ main {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #1a4d2e;
   background-color: #e8f5e9;
+  align-items: start;
 }
 
 .main-exception {
@@ -95,6 +100,10 @@ nav li:first-child a {
 }
 
 /* Cartes */
+/*
+  Fichier: /www/s106/css/style.css
+  Description: Styles globaux pour le site Nice Green Mobility.
+*/
 :root {
   --color: #2e7d32;
   --transition-time: 0.5s;
@@ -211,7 +220,7 @@ a {
 }
 
 .card:before {
-  background: #c8e6c9; /* Light green */
+  background: #c8e6c9;
   width: 250%;
   height: 250%;
 }
@@ -254,10 +263,9 @@ a {
   font-weight: normal;
 }
 
-/* MEDIA QUERIES */
+/* Requêtes média */
 @media screen and (max-width: 1285px) {
   .cards-wrapper {
-    /* Tablet: 2 columns */
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     padding: 2rem;
@@ -266,7 +274,6 @@ a {
 
 @media screen and (max-width: 900px) {
   .cards-wrapper {
-    /* Small screens / phones: single column, centered */
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
@@ -299,7 +306,7 @@ a {
     margin: 0;
   }
 }
-/* Fin cartes*/
+/* Fin des cartes */
 @media (max-width: 768px) {
   nav ul {
     gap: 0.5rem;
@@ -319,7 +326,7 @@ a {
 }
 /* Fin de Nav */
 
-/* Header */
+/* En-tête */
 .header-1 {
   display: flex;
   justify-content: center;
@@ -328,7 +335,7 @@ a {
   font-size: 250%;
   font-family: cursive;
 }
-/* Fin de Header */
+/* Fin de l'en-tête */
 
 /* Page sections / article cards */
 .section-card {
@@ -353,7 +360,6 @@ a {
   line-height: 1.6;
 }
 
-/* Hero / section images */
 .hero {
   margin: 1.25rem 0 0.75rem 0;
   overflow: hidden;
@@ -381,7 +387,7 @@ a {
   }
 }
 
-/* Objectives section styling */
+/* Style de la section objectifs */
 .objectives {
   border-left: 6px solid var(--color);
   background: #ffffff;

@@ -1,4 +1,8 @@
-
+/*
+  Fichier: /www/s106/css/qcm.css
+  Description: Styles spécifiques au questionnaire QCM.
+ 
+*/
 :root {
   --qcm-bg: #ffffff;
   --qcm-accent: #2b7a78;
@@ -22,17 +26,25 @@ body {
     Arial;
 }
 
-fieldset {
+.questionnaire fieldset,
+.qcm-fieldset {
   border: 1px solid #e6e6e6;
-  padding: 0.75rem 1rem;
-  margin: 0.75rem 0;
-  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  margin: 0;
+  border-radius: 8px;
   background: #fff;
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.06);
 }
 
 legend {
   font-weight: 600;
   padding: 0 0.5rem;
+}
+
+.questionnaire fieldset legend,
+.qcm-fieldset legend {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 label {
@@ -50,6 +62,11 @@ input[type="checkbox"] {
 .questionnaire p strong {
   display: inline-block;
   margin-bottom: 0.35rem;
+}
+
+.questionnaire fieldset p,
+.qcm-fieldset p {
+  margin-bottom: 0.5rem;
 }
 
 .qcm-actions {
@@ -115,7 +132,6 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 
-
 @media (max-width: 640px) {
   .questionnaire {
     padding: 0.75rem;
@@ -129,7 +145,6 @@ input[type="checkbox"] {
     flex-direction: column-reverse;
   }
 }
-
 
 @media print {
   .questionnaire {
