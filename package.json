@@ -1,0 +1,21 @@
+{
+  "name": "nice-green-mobility",
+  "version": "1.0.0",
+  "description": "Étude et site web sur les transports non polluants à Nice",
+  "scripts": {
+    "dev": "cd www/s106 && python3 -m http.server 8000",
+    "preview": "cd www/s106 && python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gog2006/nice-green-mobility.git"
+  },
+  "keywords": [
+    "mobility",
+    "green",
+    "nice",
+    "transport"
+  ],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE"
+}
